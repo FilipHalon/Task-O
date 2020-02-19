@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from "../components/Sidebar";
-import AvailableTask from '../components/AvailableTask';
+import AddedTask from '../components/AddedTask';
 
 export default props => {
     const isThisProfileTask = props.ownTasks === "thisProfileTasks"; 
@@ -20,9 +20,9 @@ export default props => {
                 </div>
                 }
                 <div className="task-area">
-                    <AvailableTask ownTask={isThisProfileTask && "thisProfileTasks"}/>
-                    <AvailableTask ownTask={isThisProfileTask && "thisProfileTasks"}/>
-                    <AvailableTask ownTask={isThisProfileTask && "thisProfileTasks"}/>
+                    <AddedTask thisProfileTasks={isThisProfileTask && "thisProfileTasks"}/>
+                    <AddedTask thisProfileTasks={isThisProfileTask && "thisProfileTasks"}/>
+                    <AddedTask thisProfileTasks={isThisProfileTask && "thisProfileTasks"}/>
                 </div>
             </div>
         </section>
