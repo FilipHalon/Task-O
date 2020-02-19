@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import ProfilePage from './ProfilePage';
+import Profile from './Profile';
 
 export default () => {
     return (
@@ -12,7 +12,7 @@ export default () => {
             <Switch>
                 <main>
                     <Route path="/profile">
-                        <ProfilePage />
+                        <Profile />
                     </Route>
                     <Route path="/login">
 
@@ -21,7 +21,7 @@ export default () => {
 
                     </Route>
                     <Route path="/">
-                        <ProfilePage />
+                        <Profile />
                     </Route>
                 </main>
             </Switch>
