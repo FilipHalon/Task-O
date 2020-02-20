@@ -34,7 +34,7 @@ export default props => {
             }
             <div>
                 <span>1 godzinę temu</span>
-                <Link to="/tasks">
+                <Link to="/task-details">
                     <span className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </span>
                 </Link>
             </div>

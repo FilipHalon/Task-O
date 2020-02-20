@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
+import TaskSidebar from '../components/TaskSidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCommentAlt, faThumbsUp, faCloudUploadAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default () => {
     return (
         <React.Fragment>
-            <Sidebar />
+            <TaskSidebar />
             <section className="task-description">
                 <div className="task-description">
                     <div className="task-general-info">

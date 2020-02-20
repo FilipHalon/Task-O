@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBuilding, faLock } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-
 export default props => {
     const isEnterCodeStage = props.authStage === "enterCode";
     const isRegisterForm = props.formType === "register";

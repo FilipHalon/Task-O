@@ -7,10 +7,10 @@ export default () => (
         <div className="page-content-center">
             <h1>Rejestracja do systemu Task-O!</h1>
             <span className="login-areas">
-                <Link to="/">
+                <Link to="/register">
                     <SignInField accountType="developer"/>
                 </Link>
-                <Link to="/">
+                <Link to="/register">
                     <SignInField accountType="company"/>
                 </Link>
             </span>

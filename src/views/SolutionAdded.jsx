@@ -1,12 +1,12 @@
 import React from 'react';
-import Sidebar from "./components/Sidebar";
+import TaskSidebar from "../components/TaskSidebar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCheck, faLongArrowAltRight, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
     return(
         <div className="solution-add">
-            <Sidebar />
+            <TaskSidebar />
             <section className="task-description">
                 <div className="task-description">
                     <div className="task-general-info">

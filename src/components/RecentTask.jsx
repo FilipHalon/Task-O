@@ -8,7 +8,7 @@ export default () => {
     return (
         <div className="recent-task">
             <span><FontAwesomeIcon icon={faTasks} /></span>
-            <Link to="/">
+            <Link to="/task-details">
                 <span className="recent-task-description">
                     <span>Sortowanie bąbelkowe</span>
                     <span>Napisać algorytm sortowania bąbelkowego z implementacją…</span>

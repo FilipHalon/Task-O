@@ -1,13 +1,13 @@
 import React from 'react';
-import Sidebar from "../components/Sidebar";
+import TaskSidebar from "../components/TaskSidebar";
 import AddedTask from '../components/AddedTask';
 
 export default props => {
-    const isThisProfileTask = props.ownTasks === "thisProfileTasks"; 
+    const { isThisProfileTask } = props; 
 
     return(
         <React.Fragment>
-            <Sidebar />
+            <TaskSidebar />
             <section className="task-description">
                 <div className="task-description">
                     {!isThisProfileTask &&

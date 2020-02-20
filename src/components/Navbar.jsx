@@ -41,18 +41,18 @@ export default props => {
                     <div className="navbar-auth">
                         {isLogged ?
                         <li>
-                            <Link href="/profile">
+                            <Link to="/profile">
                                 User name
                             </Link>
                         </li>:
                         <React.Fragment>
                             <li>
-                                <Link href="/login">
+                                <Link to="/login">
                                     <FontAwesomeIcon icon={faUser} /> Zaloguj się
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/register">
+                                <Link to="/register">
                                     <FontAwesomeIcon icon={faUserPlus} /> Zarejestruj się
                                 </Link>
                             </li>

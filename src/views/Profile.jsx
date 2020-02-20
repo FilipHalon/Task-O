@@ -13,7 +13,7 @@ export default props => {
             <section className="task-description">
                 <div className="task-description">
                     <div className="task-area">
-                        <Link to="/active-tasks">
+                        <Link to="/tasks">
                             <div className="profile-action"><span><FontAwesomeIcon icon={faSearch} /></span><span>Przeglądaj zadania</span></div>
                         </Link>
                         {!isDeveloperAccount &&
@@ -21,11 +21,11 @@ export default props => {
                             <div className="profile-action"><span><FontAwesomeIcon icon={faTasks} /></span><span>Dodaj zadanie</span></div>
                         </Link>
                         }
-                        <Link to="/added-tasks">
+                        <Link to="/">
                             <div className="profile-action"><span><FontAwesomeIcon icon={faSearch} /></span><span>Zobacz rozwiązania</span></div>
                         </Link>
                         {!isDeveloperAccount && 
-                        <Link to="/added-tasks">
+                        <Link to="/this-profile-tasks">
                             <div className="profile-action"><span><FontAwesomeIcon icon={faSearch} /></span><span>Zobacz wstawione zadania</span></div>
                         </Link>
                         }

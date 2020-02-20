@@ -1,14 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
-import Sidebar from "../components/Sidebar";
+import TaskSidebar from "../components/TaskSidebar";
 
 export default props => {
-    const isNewSolution = props.addType === "solution";
+    const { isNewSolution } = props;
 
     return(
         <div className="solution-add">
-            <Sidebar />
+            <TaskSidebar />
             <section className="task-description">
                 <div className="task-description">
                     <div className="task-border">
