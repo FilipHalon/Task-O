@@ -11,7 +11,7 @@ export default props => {
         <header>
             <nav>
                 <ul>
-                    <div className="navbar-options">
+                    <div className="navbar-left">
                         <li>
                             <Link to="/">
                                 <img src={Taskoala} alt="taskoala" />
@@ -38,7 +38,7 @@ export default props => {
                             </Link>
                         </li>
                     </div>
-                    <div className="navbar-auth">
+                    <div className="navbar-right">
                         {isLogged ?
                         <li>
                             <Link to="/profile">
