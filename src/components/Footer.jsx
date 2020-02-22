@@ -1,9 +1,10 @@
 import React from 'react';
+import { StyledFooter } from './Styled';
 
 export default () => {
     return(
-        <footer>
+        <StyledFooter>
             <span>&copy; 2020 Task-O!</span>
-        </footer>
+        </StyledFooter>
     )
 }
