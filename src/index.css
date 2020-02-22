@@ -309,9 +309,8 @@ div.task-description {
   /* display: flex;
   flex-direction: column; */
   /* width: 100%; */
-  /* max-width: 900px; */
+  max-width: 900px;
   /* margin: 10%; */
-
   line-height: 1.2em;
 }
 
@@ -426,6 +425,8 @@ div.task-description {
 /* sidebar */
 
 .sidebar {
+  display: none;
+  position: absolute;
   /* position: absolute; */
   /* width: 30%; */
   /* display: inline-block; */
@@ -433,6 +434,13 @@ div.task-description {
   border: var(--task-sidebar-border);
   background: #F6F9FC;
   max-width: 30%;
+}
+
+@media (min-width: 650px) {
+  .sidebar {
+    display: initial;
+    position: static;
+  }
 }
 
 .sidebar > div {
@@ -453,7 +461,14 @@ div.task-description {
 .search-area input {
   border: none;
   height: 2em;
+  width: 140px;
   font-size: .9em;
+}
+
+@media (min-width: 750px) {
+  .search-area input {
+    width: auto;
+  }
 }
 
 .recent-task-list > div {
