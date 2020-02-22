@@ -285,7 +285,7 @@ main {
   /* grid: auto / 3fr 7fr; */
   /* margin: 0; */
   /* padding: 0; */
-  height: 100%;
+  min-height: 100%;
   /* width: 100%; */
   background: #E6EBF1;
 
@@ -293,7 +293,7 @@ main {
 
 section.task-description{
   /* display: inline-block; */
-  /* width: 70%; */
+  width: 100%;
   /* box-sizing: padding-box; */
   /* padding: 5%; */
   /* max-width: 60%; */
@@ -430,7 +430,7 @@ div.task-description {
   /* position: absolute; */
   /* width: 30%; */
   /* display: inline-block; */
-  height: 100%;
+  min-height: 100%;
   border: var(--task-sidebar-border);
   background: #F6F9FC;
   max-width: 30%;
