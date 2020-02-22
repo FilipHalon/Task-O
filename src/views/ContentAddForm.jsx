@@ -7,7 +7,7 @@ export default props => {
     const { isNewSolution } = props;
 
     return(
-        <div className="solution-add">
+        <>
             <TaskSidebar />
             <section className="task-description">
                 <div className="task-description">
@@ -35,6 +35,6 @@ export default props => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 };

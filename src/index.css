@@ -298,6 +298,9 @@ section.task-description{
   /* padding: 5%; */
   /* max-width: 60%; */
   border: solid 2em transparent;
+  /* display: flex;
+  justify-content: center; */
+  /* max-width: 70%; */
 }
 
 div.task-description {
@@ -429,6 +432,7 @@ div.task-description {
   height: 100%;
   border: var(--task-sidebar-border);
   background: #F6F9FC;
+  max-width: 30%;
 }
 
 .sidebar > div {
@@ -438,7 +442,7 @@ div.task-description {
 .search-area {
   display: flex;
   align-items: center;
-  height: 3.5rem;
+  height: 3.5em;
   border-bottom: var(--task-sidebar-border);
 }
 
@@ -448,6 +452,8 @@ div.task-description {
 
 .search-area input {
   border: none;
+  height: 2em;
+  font-size: .9em;
 }
 
 .recent-task-list > div {
@@ -470,7 +476,7 @@ div.task-description {
 }
 
 .recent-task-list > ul li {
-  display: block;
+  /* display: block; */
   padding: 10px 10px 10px 15px;
   border-bottom: var(--task-sidebar-border);
 }
@@ -609,6 +615,8 @@ div.solution-add-area {
 
 .solution-add-message {
   margin: 2rem 4rem;
+  /* width: 70%; */
+  /* display: flex; */
 }
 
 .solution-add-message-top {

@@ -5,7 +5,7 @@ import { faLightbulb, faCheck, faLongArrowAltRight, faPaperPlane } from '@fortaw
 
 export default () => {
     return(
-        <div className="solution-add">
+        <>
             <TaskSidebar />
             <section className="task-description">
                 <div className="task-description">
@@ -44,6 +44,6 @@ export default () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 };
