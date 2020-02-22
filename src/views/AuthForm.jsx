@@ -61,7 +61,7 @@ export default props => {
                 <button type="submit" className="enter-code-stage-button">Zatwierdź</button> : 
                 <button type="submit" className={isRegisterForm ? "register-button" : "login-button"}>{isRegisterForm ? "Zarejestruj się" : "Zaloguj się"}</button>
                 }
-                <Link href={isRegisterForm ? "/login" : "/register"}>
+                <Link to={isRegisterForm ? "/login" : "/register"}>
                     <button>{isRegisterForm ? "Zaloguj się" : "Zarejestruj się"}</button>
                 </Link>
             </form>

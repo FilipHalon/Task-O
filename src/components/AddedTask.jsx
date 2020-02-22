@@ -14,7 +14,7 @@ export default props => {
                     <span>Sortowanie bąbelkowe</span>
                     <span className="required-programming-languages">Dowolny język programowania</span>
                 </span>
-                <span><image src="/UAM-logo-siw-amu.jpg" alt="" /></span>
+                <span><img src="/UAM-logo-siw-amu.jpg" alt="" /></span>
             </div>
             <div className="active-task-summary">
                 {isOwnTask ?
