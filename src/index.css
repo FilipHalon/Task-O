@@ -271,6 +271,11 @@ form a button {
   color: #8F9DBE;
   font-size: .8em;
   /* text-align: right; */
+  transition: .4s;
+}
+
+form a button:hover {
+  color: #7082a5;
 }
 
 button:hover {
