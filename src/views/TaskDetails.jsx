@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default () => {
     return (
-        <React.Fragment>
+        <>
             <TaskSidebar />
             <section className="task-description">
                 <div className="task-description">
@@ -43,15 +43,15 @@ export default () => {
                             Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. Napisz program, który będzie wczytywał liczby ze standardowego wejścia, tak długo, aż wczytaną liczbą będzie 0 oraz wypisze wszystkie wczytane liczby w porządku niemalejącym.
                         </div>
                         <div className="actions">
-                            <span>Możliwe akcje</span>
-                            <span>
+                            <div>Możliwe akcje</div>
+                            <div>
                                 <Link to="/new-solution-add">
                                     <FontAwesomeIcon icon={faCloudUploadAlt} />
                                 </Link>
                                 <Link to="/new-solution-add">
                                     <FontAwesomeIcon icon={faPaperPlane} />
                                 </Link>
-                            </span>
+                            </div>
                         </div>
                         <div className="task-description-details">
                             <h2>Szczegóły zadania</h2>
@@ -64,6 +64,6 @@ export default () => {
                     </div>
                 </div>
             </section>
-        </React.Fragment>
+        </>
     )
 }

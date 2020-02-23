@@ -344,12 +344,12 @@ div.task-description {
 }
 
 .task-general-info h2:last-of-type {
-  margin-top: 0;
+  /* margin-top: 0; */
   color: #838EAB;
 }
 
 .task-general-info img {
-  width: 4rem;
+  width: 4em;
 }
 
 .task-border {
@@ -359,7 +359,7 @@ div.task-description {
 
 .task-description-heading {
   display: flex;
-  height: 2.5rem;
+  /* height: 2.5rem; */
   align-items: center;
   border-bottom: var(--task-sidebar-border);
 }
@@ -373,9 +373,9 @@ div.task-description {
 .programming-languages {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  height: 3.5rem;
-  padding-right: 15px;
+  /* justify-content: flex-end; */
+  height: 3.5em;
+  padding: 0 15px;
   font-size: 90%;
   border-bottom: var(--task-sidebar-border);
 }
@@ -383,6 +383,7 @@ div.task-description {
 .required-programming-languages {
   padding: 1%;
   border-radius: 10px;
+  width: 100%;
   background: #D7D0F0;
   color: #5D47AA;
 }
@@ -397,16 +398,16 @@ div.task-description {
 }
 
 .actions {
-  align-self: center;
-  justify-self: center;
+  /* align-self: center;
+  justify-self: center; */
   display: flex;
-  height: 3.5rem;
-  width: 30%;
-  padding: 2rem;
+  height: 3.5em;
+  /* width: 30%; */
+  padding: 2em;
   border-radius: 4px;
 }
 
-.actions span {
+.actions div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -416,7 +417,7 @@ div.task-description {
   border-radius: 4px;
 }
 
-.actions span:first-of-type {
+.actions div:first-of-type {
   background: var(--button-blue);
   color: #FFF;
 }
@@ -433,6 +434,10 @@ div.task-description {
 
 .task-description h2 {
   font-size: 100%;
+}
+
+.task-description-details h2 {
+  margin-top: 0;
 }
 
 /* sidebar */
