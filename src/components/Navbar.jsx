@@ -52,7 +52,7 @@ export default props => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/register">
+                                <Link to="/welcome">
                                     <FontAwesomeIcon icon={faUserPlus} /> Zarejestruj się
                                 </Link>
                             </li>
