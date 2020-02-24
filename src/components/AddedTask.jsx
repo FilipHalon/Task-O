@@ -9,22 +9,22 @@ export default props => {
     return (
         <div className="active-task">
             <div className="recent-task">
-                <span><FontAwesomeIcon icon={faTasks} /></span>
-                <span className="recent-task-description">
-                    <span>Sortowanie bąbelkowe</span>
-                    <span className="required-programming-languages">Dowolny język programowania</span>
-                </span>
-                <span><img src="/UAM-logo-siw-amu.jpg" alt="" /></span>
+                <div><FontAwesomeIcon icon={faTasks} /></div>
+                <div className="recent-task-description">
+                    <h3>Sortowanie bąbelkowe</h3>
+                    <div className="required-programming-languages">Dowolny język programowania</div>
+                </div>
+                <div><img src="/UAM-logo-siw-amu.jpg" alt="" /></div>
             </div>
             <div className="active-task-summary">
                 {isOwnTask ?
-                <span>
+                <div>
                     Autor rozwiązania: Jan Kowalski
-                </span>
+                </div>
                 :
-                <span>
-                    Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. Napisz program, który będzie fajny. 
-                </span>
+                <div>
+                    Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. 
+                </div>
                 }
             </div>
             {isOwnTask &&
@@ -33,9 +33,9 @@ export default props => {
             </div>
             }
             <div>
-                <span>1 godzinę temu</span>
+                <div>1 godzinę temu</div>
                 <Link to="/task-details">
-                    <span className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </span>
+                    <div className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </div>
                 </Link>
             </div>
         </div>

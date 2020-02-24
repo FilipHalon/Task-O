@@ -570,18 +570,23 @@ div.task-description {
 }
 
 .active-task .recent-task svg {
-  color: #FE716C;
+  /* color: #FE716C; */
 }
 
 .active-task img {
   width: 2em;
 }
 
+.active-task h3 {
+  margin-bottom: .5em;
+  color: initial;
+}
+
 .active-task-summary {
   background: #F6F9FC;
 }
 
-.active-task-summary span {
+.active-task-summary div {
   display: inline-block;
   margin: 1em;
   padding: .5em;
@@ -595,33 +600,26 @@ div.task-description {
   padding: .5rem;
 }
 
-.active-task > div:last-of-type span {
+.active-task > div:last-of-type div {
   padding: .5rem;
 }
 
-.active-task > div:last-of-type span:first-of-type {
-  color: #838EAB;
+.active-task > div:last-of-type div:first-of-type {
+  /* color: #838EAB; */
 }
 
-.active-task > div:last-of-type span:last-of-type {
+.active-task > div:last-of-type div:last-of-type {
   border-radius: 4px;
   color: #FFF;
   background: var(--button-blue-hover);
 }
 
-.active-task > div:last-of-type span:last-of-type:hover {
+.active-task > div:last-of-type div:last-of-type:hover {
   background: var(--button-blue);
   cursor: pointer;
 }
 
 /* active tasks */
-
-.task-area {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* grid: auto / 1fr; */
-  /* grid-gap: 2em; */
-}
 
 .task-area {
   display: grid;
