@@ -423,7 +423,7 @@ div.task-description {
 }
 
 .actions svg {
-  padding: 15px;
+  margin: 15px;
   color: #838DAC;
   cursor: pointer;
 }
@@ -549,7 +549,7 @@ div.task-description {
 }
 
 .recent-task a:last-child div {
-  color: var(--button-orange)
+  color: #838DAC
 }
 
 .recent-task a:last-child div:hover {
