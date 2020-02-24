@@ -713,23 +713,25 @@ div.solution-add-area {
 form.solution-add-area {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   /* width: 100%; */
   /* height: auto; */
   /* align-items: center; */
 }
 
 .input-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
   /* width: 90%; */
+  border: solid 1em transparent;
 }
 
 .input-area input,
 .input-area textarea {
   width: 90%;
-  padding: 0;
-  margin: 3% 4%;
+  padding: 1em;
+  margin-bottom: 1em;
   box-shadow: 0px 7px 14px #32325D1A;
 }
 
@@ -743,7 +745,8 @@ form.solution-add-area > div:last-of-type {
 }
 
 form.solution-add-area > div:last-of-type button {
-  margin: 1rem;
+  margin: 1em;
+  margin-top: 0;
   background: var(--button-green);
   color: #FFF;
 }
