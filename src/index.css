@@ -473,7 +473,7 @@ div.task-description {
 }
 
 .search-area svg {
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 .search-area input {
@@ -481,6 +481,7 @@ div.task-description {
   height: 2em;
   width: 140px;
   font-size: .9em;
+  padding: 0 1em;
 }
 
 @media (min-width: 750px) {
@@ -494,23 +495,23 @@ div.task-description {
   display: flex;
   align-items: center;
   /* width: 100%; */
-  height: 100%;
-  height: 2.5rem;
+  /* height: 100%; */
+  height: 2.5em;
   border-bottom: var(--task-sidebar-border);
 }
 
 .recent-task-list > ul {
   /* position: absolute; */
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   padding: 0;
   margin: 0;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .recent-task-list > ul li {
   /* display: block; */
-  padding: 10px 10px 10px 15px;
+  padding: 10px;
   border-bottom: var(--task-sidebar-border);
 }
 
@@ -526,28 +527,33 @@ div.task-description {
   font-size: 90%;
 }
 
-.recent-task span {
+.recent-task div {
   padding: 3px;
+  transition: .4s;
 }
 
-.recent-task-description {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
+.recent-task > div {
+  color: var(--button-orange);
 }
 
-.recent-task-description:hover {
-  color: var(--button-purple-hover);
+.recent-task a {
+  color: black;
 }
 
-.recent-task > span:last-of-type {
-  align-self: center;
-  color: #838EAB;
-  cursor: pointer;
+.recent-task h3 {
+  margin: 0;
 }
 
-.recent-task > span:last-of-type:hover {
-  color: var(--button-purple-hover);
+.recent-task a div:hover {
+  color: var(--button-orange-hover);
+}
+
+.recent-task a:last-child div {
+  color: var(--button-orange)
+}
+
+.recent-task a:last-child div:hover {
+  color: var(--button-orange-hover)
 }
 
 /* active task */

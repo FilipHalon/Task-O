@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom';
 export default () => {
     return (
         <div className="recent-task">
-            <span><FontAwesomeIcon icon={faTasks} /></span>
+            <div><FontAwesomeIcon icon={faTasks} /></div>
             <Link to="/task-details">
-                <span className="recent-task-description">
-                    <span>Sortowanie bąbelkowe</span>
-                    <span>Napisać algorytm sortowania bąbelkowego z implementacją…</span>
-                </span>
+                <div className="recent-task-description">
+                    <h3>Sortowanie bąbelkowe</h3>
+                    <p>Napisać algorytm sortowania bąbelkowego z implementacją…</p>
+                </div>
             </Link>
             <Link to="/new-solution-add">
-                <span><FontAwesomeIcon icon={faCloud} /></span>
+                <div><FontAwesomeIcon icon={faCloud} /></div>
             </Link>
         </div>
     )
