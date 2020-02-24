@@ -605,16 +605,16 @@ div.task-description {
 }
 
 .active-task > div:last-of-type div:first-of-type {
-  /* color: #838EAB; */
+  color: #838EAB;
 }
 
-.active-task > div:last-of-type div:last-of-type {
+.active-task > div:last-of-type a div:last-of-type {
   border-radius: 4px;
   color: #FFF;
   background: var(--button-blue-hover);
 }
 
-.active-task > div:last-of-type div:last-of-type:hover {
+.active-task > div:last-of-type a div:last-of-type:hover {
   background: var(--button-blue);
   cursor: pointer;
 }
