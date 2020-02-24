@@ -650,8 +650,12 @@ div.solution-add-area {
   height: 400px;
 } */
 
+/* .solution-add-area {
+  padding-bottom: 1.5em;
+} */
+
 .solution-add-message {
-  margin: 2rem 4rem;
+  margin: 2em 4em;
   /* width: 70%; */
   /* display: flex; */
 }
@@ -663,7 +667,7 @@ div.solution-add-area {
 }
 
 .solution-add-message-top div {
-  padding: .6rem;
+  padding: .6em;
 }
 
 .solution-add-message-top > div:last-of-type {
@@ -680,8 +684,8 @@ div.solution-add-area {
 }
 
 .solution-add-message-bottom button {
-  padding: .2rem;
-  margin: .5rem 1.5rem;
+  padding: .3em;
+  margin: .6em 1.6em;
   border: 1px solid #838DAC;
   border-radius: 4px;
   background: #212844;
@@ -695,10 +699,10 @@ div.solution-add-area {
 }
 
 .solution-add-status {
-  align-self: center;
-  padding: .6rem;
-  margin: 1.5rem;
-  border-radius: 4px;
+  /* align-self: center; */
+  padding: .6em;
+  /* margin: 1.5em; */
+  /* border-radius: 4px; */
   background: var(--button-blue);
   color: #FFF;
   text-align: center;
