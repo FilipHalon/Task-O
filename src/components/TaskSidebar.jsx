@@ -17,7 +17,7 @@ export default () => {
                 <input type="text" placeholder="Wyszukaj" onChange={handleSearch}/>
             </div>
             <div className="recent-task-list">
-                <div>Ostatnie zadania</div>
+                <div><h3>Ostatnie zadania</h3></div>
                 <ul>
                     <li><RecentTask /></li>
                     <li><RecentTask /></li>

@@ -14,7 +14,7 @@ export default props => {
                     <div className="task-border">
                         <div className="task-description-heading">
                             <FontAwesomeIcon icon={faLightbulb} />
-                            <span>Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</span>
+                            <h3>Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</h3>
                         </div>
                         <form className="solution-add-area">
                             {isNewSolution ?

@@ -22,7 +22,7 @@ export default () => {
                     <div className="task-border">
                         <div className="task-description-heading">
                         <FontAwesomeIcon icon={faLightbulb} />
-                        <span>Opis zadania</span>
+                        <h3>Opis zadania</h3>
                         {/* <div>
                             <span><FontAwesomeIcon icon={faCommentAlt} /></span>
                             <span>100%</span>
@@ -54,7 +54,7 @@ export default () => {
                             </div>
                         </div>
                         <div className="task-description-details">
-                            <h2>Szczegóły zadania</h2>
+                            <h3>Szczegóły zadania</h3>
                             <div>
                                 <p>Napisz program, który: wczyta ze standardowego ciąg liczb całkowitych nieujemnych zakończony liczbą 0, wypisze wszystkie wszystkie liczby z tego ciągu (wraz z końcowym zerem) w porządku niemalejącym.</p>
                                 <p>Wejście zawiera pewną ilość liczb całkowitych nieujemnych, nie większych niż 10. Każda z tych liczb zapisana będzie w osobnym wierszu. W ostatnim wierszu zapisana będzie liczba 0. Możesz założyć, że liczba 0 nie pojawi się nigdzie wcześniej wśród podanych elementów.</p>
