@@ -93,7 +93,8 @@ nav a {
 }
 
 .navbar-left > li:first-child > a {
-  /* padding: 0.5em 1em; */
+  /* border: solid 1em transparent */
+  border: none;
 }
 
 nav a:hover {
@@ -114,7 +115,9 @@ nav a:hover {
 }
 
 nav img {
-  width: 1.9em;
+  width: 4em;
+  padding-left: .1em;
+  padding-top: .3em;
 }
 
 /* index page */
