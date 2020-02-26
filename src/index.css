@@ -340,8 +340,8 @@ div.task-description {
 }
 
 .task-general-info {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   /* width: 100%; */
   max-width: 900px;
 }
@@ -358,7 +358,7 @@ div.task-description {
 .task-general-info h2:last-of-type {
   /* margin-top: 0; */
   color: #838EAB;
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .task-general-info img {
@@ -433,6 +433,13 @@ div.task-description {
 .actions div:first-of-type {
   background: var(--button-blue);
   color: #FFF;
+  font-size: 90%;
+}
+
+@media (min-width: 340px) {
+  .actions div:first-of-type {
+    font-size: 100%;
+  }
 }
 
 .actions svg {
