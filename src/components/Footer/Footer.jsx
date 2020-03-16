@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyledFooter } from './Styled';
+import { Footer } from './StyledFooter';
 
 export default () => {
     return(
-        <StyledFooter>
+        <Footer>
             <span>&copy; 2020 Task-O!</span>
-        </StyledFooter>
+        </Footer>
     )
 }
