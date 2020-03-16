@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faTasks, faComments, faCommentDots, faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
-import Taskoala from '../assets/taskoala.png';
+import Taskoala from '../../assets/taskoala.png';
 
 export default props => {
     const isLogged = props.isLogged === "logged";

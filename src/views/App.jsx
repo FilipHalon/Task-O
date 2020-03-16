@@ -1,6 +1,6 @@
 import React from 'react';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import Header from '../components/Navbar';
+import Header from '../components/Navbar/Navbar';
 import Footer from '../components/Footer';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Profile from './Profile';
