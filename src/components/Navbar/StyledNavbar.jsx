@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const StyledHeader = styled.header`
     position: sticky;
@@ -24,10 +25,10 @@ export const StyledLi = styled.li`
     display: inline-flex;
 `;
 
-export const StyledA = styled.a`
+export const StyledLink = styled(Link)`
     border: ${props => props.logo ? 'none' : 'solid 1em transparent'};
     text-decoration: none;
-    color: ${props => props.theme.navbarTextColor}
+    color: ${props => props.theme.navbarTextColor};
     font-size: 70%;
 
     &:hover {

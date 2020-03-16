@@ -1,66 +1,67 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faTasks, faComments, faCommentDots, faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
 import Taskoala from '../../assets/taskoala.png';
+import { StyledHeader, StyledUl, StyledDiv, StyledLi, StyledLink, StyledImage } from './StyledNavbar';
 
 export default props => {
     const isLogged = props.isLogged === "logged";
 
     return (
-        <header>
+        <StyledHeader>
             <nav>
-                <ul>
-                    <div className="navbar-left">
-                        <li>
-                            <Link to="/">
-                                <img src={Taskoala} alt="taskoala" />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/tasks">
+                <StyledUl>
+                    <StyledDiv>
+                        <StyledLi>
+                            <StyledLink to="/" logo>
+                                <StyledImage src={Taskoala} alt="taskoala" />
+                            </StyledLink>
+                        </StyledLi>
+                        <StyledLi>
+                            <StyledLink to="/tasks">
                                 <FontAwesomeIcon icon={faTasks} /> Zadania
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/">
+                            </StyledLink>
+                        </StyledLi>
+                        <StyledLi>
+                            <StyledLink to="/">
                                 <FontAwesomeIcon icon={faCommentDots} /> Pytania
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/">
+                            </StyledLink>
+                        </StyledLi>
+                        <StyledLi>
+                            <StyledLink to="/">
                                 <FontAwesomeIcon icon={faComments} /> Rozmowy
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/">
+                            </StyledLink>
+                        </StyledLi>
+                        <StyledLi>
+                            <StyledLink to="/">
                                 <FontAwesomeIcon icon={faCog} /> Ustawienia
-                            </Link>
-                        </li>
-                    </div>
-                    <div className="navbar-right">
+                            </StyledLink>
+                        </StyledLi>
+                    </StyledDiv>
+                    <StyledDiv rightSide>
                         {isLogged ?
-                        <li>
-                            <Link to="/profile">
+                        <StyledLi>
+                            <StyledLink to="/profile">
                                 User name
-                            </Link>
-                        </li>:
-                        <React.Fragment>
-                            <li>
-                                <Link to="/login">
+                            </StyledLink>
+                        </StyledLi>:
+                        <>
+                            <StyledLi>
+                                <StyledLink to="/login">
                                     <FontAwesomeIcon icon={faUser} /> Zaloguj się
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/welcome">
+                                </StyledLink>
+                            </StyledLi>
+                            <StyledLi>
+                                <StyledLink to="/welcome">
                                     <FontAwesomeIcon icon={faUserPlus} /> Zarejestruj się
-                                </Link>
-                            </li>
-                        </React.Fragment>
+                                </StyledLink>
+                            </StyledLi>
+                        </>
                         }
-                    </div>
-                </ul>
+                    </StyledDiv>
+                </StyledUl>
             </nav>
-        </header>
+        </StyledHeader>
     )
 }
