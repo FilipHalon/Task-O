@@ -1,67 +1,66 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faTasks, faComments, faCommentDots, faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
 import Taskoala from '../../assets/taskoala.png';
-import { StyledHeader, StyledUl, StyledDiv, StyledLi, StyledLink, StyledImage } from './StyledNavbar';
+import { Header, Ul, Div, Li, StyledLink, Img } from './StyledNavbar';
 
 export default props => {
     const isLogged = props.isLogged === "logged";
 
     return (
-        <StyledHeader>
+        <Header>
             <nav>
-                <StyledUl>
-                    <StyledDiv>
-                        <StyledLi>
+                <Ul>
+                    <Div>
+                        <Li>
                             <StyledLink to="/" logo>
-                                <StyledImage src={Taskoala} alt="taskoala" />
+                                <Img src={Taskoala} alt="taskoala" />
                             </StyledLink>
-                        </StyledLi>
-                        <StyledLi>
+                        </Li>
+                        <Li>
                             <StyledLink to="/tasks">
                                 <FontAwesomeIcon icon={faTasks} /> Zadania
                             </StyledLink>
-                        </StyledLi>
-                        <StyledLi>
+                        </Li>
+                        <Li>
                             <StyledLink to="/">
                                 <FontAwesomeIcon icon={faCommentDots} /> Pytania
                             </StyledLink>
-                        </StyledLi>
-                        <StyledLi>
+                        </Li>
+                        <Li>
                             <StyledLink to="/">
                                 <FontAwesomeIcon icon={faComments} /> Rozmowy
                             </StyledLink>
-                        </StyledLi>
-                        <StyledLi>
+                        </Li>
+                        <Li>
                             <StyledLink to="/">
                                 <FontAwesomeIcon icon={faCog} /> Ustawienia
                             </StyledLink>
-                        </StyledLi>
-                    </StyledDiv>
-                    <StyledDiv rightSide>
+                        </Li>
+                    </Div>
+                    <Div rightSide>
                         {isLogged ?
-                        <StyledLi>
+                        <Li>
                             <StyledLink to="/profile">
                                 User name
                             </StyledLink>
-                        </StyledLi>:
+                        </Li>:
                         <>
-                            <StyledLi>
+                            <Li>
                                 <StyledLink to="/login">
                                     <FontAwesomeIcon icon={faUser} /> Zaloguj się
                                 </StyledLink>
-                            </StyledLi>
-                            <StyledLi>
+                            </Li>
+                            <Li>
                                 <StyledLink to="/welcome">
                                     <FontAwesomeIcon icon={faUserPlus} /> Zarejestruj się
                                 </StyledLink>
-                            </StyledLi>
+                            </Li>
                         </>
                         }
-                    </StyledDiv>
-                </StyledUl>
+                    </Div>
+                </Ul>
             </nav>
-        </StyledHeader>
+        </Header>
     )
 }
