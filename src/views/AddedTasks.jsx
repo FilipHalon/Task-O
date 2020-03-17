@@ -16,9 +16,9 @@ export default props => {
             </div>
             }
             <div className="task-area">
-                <AddedTask thisProfileTasks={isThisProfileTask && "thisProfileTasks"}/>
-                <AddedTask thisProfileTasks={isThisProfileTask && "thisProfileTasks"}/>
-                <AddedTask thisProfileTasks={isThisProfileTask && "thisProfileTasks"}/>
+                <AddedTask isThisProfileTask={isThisProfileTask}/>
+                <AddedTask isThisProfileTask={isThisProfileTask}/>
+                <AddedTask isThisProfileTask={isThisProfileTask}/>
             </div>
         </>
     )

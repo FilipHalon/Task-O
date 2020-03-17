@@ -26,7 +26,7 @@ export const Li = styled.li`
 `;
 
 export const StyledLink = styled(Link)`
-    border: ${props => props.logo ? 'none' : 'solid 1em transparent'};
+    border: ${props => props.islogo ? 'none' : 'solid 1em transparent'};
     text-decoration: none;
     color: ${props => props.theme.navbarTextColor};
     font-size: 70%;
@@ -37,11 +37,11 @@ export const StyledLink = styled(Link)`
 
     @media (min-width: 500px) {
         font-size: 80%;
-      }
+    }
       
     @media (min-width: 800px) {
         font-size: 90%;
-      }
+    }
 `;
 
 export const Img = styled.img`

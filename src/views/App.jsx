@@ -20,10 +20,10 @@ export default () => {
                             <SignInPage />
                         </Route>
                         <Route path="/register">
-                            <AuthForm formType="register"/>
+                            <AuthForm isRegisterForm />
                         </Route>
                         <Route path="/login">
-                            <AuthForm formType="login" />
+                            <AuthForm />
                         </Route>
                         <Route exact path={["/", 
                                             "/tasks", 

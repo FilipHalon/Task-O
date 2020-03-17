@@ -22,10 +22,10 @@ export default () => {
                         <AddedTasks />
                     </Route>
                     <Route path="/this-profile-tasks">
-                        <AddedTasks isThisProfileTask={true} />
+                        <AddedTasks isThisProfileTask />
                     </Route>
                     <Route path="/new-solution-add">
-                        <ContentAddForm isNewSolution={true} />
+                        <ContentAddForm isNewSolution />
                     </Route>
                     <Route path="/new-task-add">
                         <ContentAddForm />

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export default props => {
-    const isDeveloperAccount = props.accountType === "developer"
+    const { isDeveloperAccount } = props
 
     return (
         <div className="task-area">

@@ -1,12 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBuilding, faLock } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default props => {
-    const isEnterCodeStage = props.authStage === "enterCode";
-    const isRegisterForm = props.formType === "register";
-    const isDeveloperAccount = props.accountType !== "developer";
+    const isDeveloperAccount = useLocation().state ? useLocation().state.isDeveloperAccount : false;
+    const { isEnterCodeStage, isRegisterForm } = props;
     const isDeveloperIcon = <span>{isDeveloperAccount ? <FontAwesomeIcon icon={faUser} /> : <FontAwesomeIcon icon={faBuilding} /> }</span>
     const lockIcon = <span><FontAwesomeIcon icon={faLock} /></span>
 

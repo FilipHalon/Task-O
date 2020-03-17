@@ -13,7 +13,7 @@ export default props => {
                 <Ul>
                     <Div>
                         <Li>
-                            <StyledLink to="/" logo>
+                            <StyledLink to="/" islogo="true">
                                 <Img src={Taskoala} alt="taskoala" />
                             </StyledLink>
                         </Li>

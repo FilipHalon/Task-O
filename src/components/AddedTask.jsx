@@ -4,7 +4,7 @@ import { faTasks, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 export default props => {
-    const isOwnTask = props.ownTask === "ownTask"; 
+    const { isThisProfileTask } = props; 
 
     return (
         <div className="active-task">
@@ -17,7 +17,7 @@ export default props => {
                 <div><img src="/UAM-logo-siw-amu.jpg" alt="" /></div>
             </div>
             <div className="active-task-summary">
-                {isOwnTask ?
+                {isThisProfileTask ?
                 <div>
                     Autor rozwiązania: Jan Kowalski
                 </div>
@@ -27,7 +27,7 @@ export default props => {
                 </div>
                 }
             </div>
-            {isOwnTask &&
+            {isThisProfileTask &&
             <div className="solution-add-message-bottom">
                 <button><FontAwesomeIcon icon={faPaperPlane} /> Wyślij wiadomość</button>
             </div>
