@@ -131,7 +131,7 @@ h1 {
   margin: 1em;
 }
 
-.login-area {
+/* .login-area {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -161,14 +161,13 @@ h1 {
 }
 
 .login-area span {
-  /* display: inline-block; */
   margin: 1em;
 }
 
 .account-icon {
   align-self: flex-end;
   font-size: 2em;
-}
+} */
 
 /* register page */
 

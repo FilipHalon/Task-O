@@ -10,6 +10,6 @@ export default {
     buttonPurpleHover: "#712aa3",
     buttonOrange: "#EB9771",
     buttonOrangeHover: "#FF7325",
-    buttonBlue: "#4457F3",
-    buttonBlueHover: "#5D6CED"
+    buttonBlue: "#5D6CED",
+    buttonBlueHover: "#4457F3"
 }

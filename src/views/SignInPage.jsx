@@ -1,5 +1,5 @@
 import React from 'react';
-import SignInField from '../components/SignInField';
+import SignInField from '../components/SignInField/SignInField';
 import { Link } from 'react-router-dom';
 
 
