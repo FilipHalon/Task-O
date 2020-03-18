@@ -16,5 +16,7 @@ export default {
     buttonBlueHover: "#4457F3",
     iconPrimaryColor: "#838DAC",
     fontInitalColor: "#000",
-    fontBlurredColor: "#838EAB"
+    fontBlurredColor: "#838EAB",
+    primaryBoxShadow: "0px 7px 14px #32325D1A",
+    focusedBackgroundColor: "#fafafa"
 }

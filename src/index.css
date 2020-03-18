@@ -752,7 +752,7 @@ form.solution-add-area > div:last-of-type button:hover {
 
 /* profile */
 
-.profile-action {
+/* .profile-action {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -801,4 +801,4 @@ form.solution-add-area > div:last-of-type button:hover {
 .profile-action svg {
   font-size: 140%;
   color: var(--button-orange)
-}
+} */
