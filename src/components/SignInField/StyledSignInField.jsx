@@ -20,6 +20,5 @@ export const Div = styled.div`
 
 export const Span = styled.span`
     margin: 1rem;
-    ${props => props.isIconWrapper && "align-self: flex-end;"}
-    ${props => props.isIconWrapper && "font-size: 2em;"}
+    ${props => props.isIconWrapper && "align-self: flex-end; font-size: 2em;"}
 `;

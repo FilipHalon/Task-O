@@ -5,7 +5,7 @@ import ContentAddForm from './ContentAddForm';
 import TaskDetails from './TaskDetails';
 import SolutionAdded from './SolutionAdded';
 import Profile from './Profile';
-import TaskSidebar from '../components/TaskSidebar';
+import TaskSidebar from '../components/TaskSidebar/TaskSidebar';
 
 export default () => {
     
