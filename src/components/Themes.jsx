@@ -2,8 +2,8 @@ export default {
     navbarTextColor: "#B5BDFB",
     navbarBackgroundColor: "#465DEF",
     taskSidebarBorder: "1px solid #E6EBF1",
-    taskSidebarBackgroundColor: "#F6F9FC",
-    taskSidebarSubSectionBackgroundColor: "#FFF",
+    secondaryLightColor: "#F6F9FC",
+    primaryLightColor: "#FFF",
     mainBackgroundColor: "#E6EBF1",
     buttonGreen: "#39C3797E",
     buttonGreenHover: "#39C379",
@@ -11,6 +11,10 @@ export default {
     buttonPurpleHover: "#712aa3",
     buttonOrange: "#EB9771",
     buttonOrangeHover: "#FF7325",
+    buttonAltRed: "#FE716C",
     buttonBlue: "#5D6CED",
-    buttonBlueHover: "#4457F3"
+    buttonBlueHover: "#4457F3",
+    iconPrimaryColor: "#838DAC",
+    fontInitalColor: "#000",
+    fontBlurredColor: "#838EAB"
 }

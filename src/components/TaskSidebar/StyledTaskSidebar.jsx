@@ -6,7 +6,7 @@ export const Section = styled.section`
     position: absolute;
     min-height: 100%;
     border: ${props => props.theme.taskSidebarBorder};
-    background-color: ${props => props.theme.taskSidebarBackgroundColor};
+    background-color: ${props => props.theme.secondaryLightColor};
     max-width: 30%;
 
     @media (min-width: 650px) {
@@ -21,10 +21,10 @@ export const Div = styled.div`
     height: ${props => props.isSearchArea ? "3.5em" : "2.5em"};
     border-bottom: ${props => props.theme.taskSidebarBorder};
     padding-left: 15px;
-    background-color: ${props => props.theme.taskSidebarSubSectionBackgroundColor};
+    background-color: ${props => props.theme.primaryLightColor};
 `;
 
-export const Icon = styled(FontAwesomeIcon)`
+export const StyledIcon = styled(FontAwesomeIcon)`
     padding-right: 5px;
 `
 
@@ -48,7 +48,7 @@ export const H3 = styled.h3`
 export const Ul = styled.ul`
     margin: 0;
     padding: 0;
-    background-color: ${props => props.theme.taskSidebarSubSectionBackgroundColor};
+    background-color: ${props => props.theme.primaryLightColor};
 `;
 
 export const Li = styled.li`

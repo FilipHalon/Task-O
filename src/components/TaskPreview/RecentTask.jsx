@@ -1,22 +1,22 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faCloud } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { TaskIntroDiv, TaskIntroSubDiv, H3, StyledIcon, StyledUploadIcon } from './StyledTaskPreview';
 
 
 export default () => {
     return (
-        <div className="recent-task">
-            <div><FontAwesomeIcon icon={faTasks} /></div>
+        <TaskIntroDiv>
+            <StyledIcon icon={faTasks} />
             <Link to="/task-details">
-                <div className="recent-task-description">
-                    <h3>Sortowanie bąbelkowe</h3>
+                <TaskIntroSubDiv>
+                    <H3>Sortowanie bąbelkowe</H3>
                     <p>Napisać algorytm sortowania bąbelkowego z implementacją…</p>
-                </div>
+                </TaskIntroSubDiv>
             </Link>
             <Link to="/new-solution-add">
-                <div><FontAwesomeIcon icon={faCloud} /></div>
+                <StyledUploadIcon icon={faCloud} />
             </Link>
-        </div>
+        </TaskIntroDiv>
     )
 }

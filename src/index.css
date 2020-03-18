@@ -523,7 +523,7 @@ div.task-description {
 
 /* recent task */
 
-.recent-task {
+/* .recent-task {
   display: flex;
   font-size: 90%;
 }
@@ -533,7 +533,7 @@ div.task-description {
   transition: .4s;
 }
 
-.recent-task > div {
+.recent-task svg {
   color: var(--button-orange-hover);
 }
 
@@ -543,12 +543,12 @@ div.task-description {
 
 .recent-task h3 {
   margin: 0;
-  /* font-weight: initial; */
   font-size: 105%;
+  margin-bottom: .5em;
 }
 
 .recent-task a div:hover {
-  color: var(--button-orange-hover);
+  color: #000;
 }
 
 .recent-task a:last-child div {
@@ -557,11 +557,11 @@ div.task-description {
 
 .recent-task a:last-child div:hover {
   color: var(--button-orange-hover)
-}
+} */
 
 /* active task */
 
-.active-task {
+/* .active-task {
   border-radius: 4px;
   background: #FFF;
   font-size: 90%;
@@ -572,17 +572,8 @@ div.task-description {
   padding: .5rem;
 }
 
-.active-task .recent-task svg {
-  /* color: #FE716C; */
-}
-
 .active-task img {
   width: 2em;
-}
-
-.active-task h3 {
-  margin-bottom: .5em;
-  color: initial;
 }
 
 .active-task-summary {
@@ -620,7 +611,7 @@ div.task-description {
 .active-task > div:last-of-type a div:last-of-type:hover {
   background: var(--button-blue);
   cursor: pointer;
-}
+} */
 
 /* active tasks */
 

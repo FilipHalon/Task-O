@@ -2,42 +2,43 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { TaskWrapperDiv, TaskIntroDiv, StyledIcon, TaskIntroSubDiv, H3, Img, TaskSummaryDiv, TaskSummarySubDiv, TaskBottomDiv, P, Button } from './StyledTaskPreview';
 
 export default props => {
     const { isThisProfileTask } = props; 
 
     return (
-        <div className="active-task">
-            <div className="recent-task">
-                <div><FontAwesomeIcon icon={faTasks} /></div>
-                <div className="recent-task-description">
-                    <h3>Sortowanie bąbelkowe</h3>
+        <TaskWrapperDiv>
+            <TaskIntroDiv>
+                <div><StyledIcon icon={faTasks} /></div>
+                <TaskIntroSubDiv notLiNested>
+                    <H3>Sortowanie bąbelkowe</H3>
                     <div className="required-programming-languages">Dowolny język programowania</div>
-                </div>
-                <div><img src="/UAM-logo-siw-amu.jpg" alt="" /></div>
-            </div>
-            <div className="active-task-summary">
+                </TaskIntroSubDiv>
+                <div><Img src="" alt="" /></div>
+            </TaskIntroDiv>
+            <TaskSummaryDiv>
                 {isThisProfileTask ?
-                <div>
+                <TaskSummarySubDiv>
                     Autor rozwiązania: Jan Kowalski
-                </div>
+                </TaskSummarySubDiv>
                 :
-                <div>
+                <TaskSummarySubDiv>
                     Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. 
-                </div>
+                </TaskSummarySubDiv>
                 }
-            </div>
+            </TaskSummaryDiv>
             {isThisProfileTask &&
             <div className="solution-add-message-bottom">
                 <button><FontAwesomeIcon icon={faPaperPlane} /> Wyślij wiadomość</button>
             </div>
             }
-            <div>
-                <div>1 godzinę temu</div>
+            <TaskBottomDiv>
+                <P>1 godzinę temu</P>
                 <Link to="/task-details">
-                    <div className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </div>
+                    <Button className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </Button>
                 </Link>
-            </div>
-        </div>
+            </TaskBottomDiv>
+        </TaskWrapperDiv>
     )
 }

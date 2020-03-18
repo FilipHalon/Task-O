@@ -1,5 +1,5 @@
 import React from 'react';
-import AddedTask from '../components/AddedTask';
+import AddedTask from '../components/TaskPreview/AddedTask';
 
 export default props => {
     const { isThisProfileTask } = props; 
