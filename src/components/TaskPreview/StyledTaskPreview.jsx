@@ -41,6 +41,7 @@ export const H3 = styled.h3`
     font-size: 105%;
 `;
 
+// +
 export const StyledUploadIcon = styled(FontAwesomeIcon)`
     color: ${props => props.theme.iconPrimaryColor};
     transition: .4s;
@@ -78,7 +79,7 @@ export const P = styled.p`
     color: ${props => props.theme.fontBlurredColor};
 `;
 
-export const Button = styled.div`
+export const ButtonDiv = styled.div`
     padding: .5rem;
     border-radius: 4px;
     color: ${props => props.theme.primaryLightColor};

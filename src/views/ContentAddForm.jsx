@@ -1,17 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
+import { TaskWrapperDiv, TaskHeadingDiv, StyledIcon, H3 } from './Styled';
 
 export default props => {
     const { isNewSolution } = props;
 
     return(
         <>
-            <div className="task-border">
-                <div className="task-description-heading">
-                    <FontAwesomeIcon icon={faLightbulb} />
-                    <h3>Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</h3>
-                </div>
+            <TaskWrapperDiv>
+                <TaskHeadingDiv>
+                    <StyledIcon icon={faLightbulb} />
+                    <H3>Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</H3>
+                </TaskHeadingDiv>
                 <form className="solution-add-area">
                     {isNewSolution ?
                     <div className="input-area">
@@ -28,7 +29,7 @@ export default props => {
                         <button type="submit"><FontAwesomeIcon icon={faCloudUploadAlt} /> Publikuj</button>
                     </div>
                 </form>
-            </div>
+            </TaskWrapperDiv>
         </>
     )
 };

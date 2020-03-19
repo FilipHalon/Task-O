@@ -326,16 +326,10 @@ div.task-description {
   line-height: 1.2em;
 }
 
-.task-general-info {
+/* .task-general-info {
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
   max-width: 900px;
-}
-
-.task-general-info > div:first-of-type {
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 .task-general-info h2:first-of-type {
@@ -343,7 +337,6 @@ div.task-description {
 }
 
 .task-general-info h2:last-of-type {
-  /* margin-top: 0; */
   color: #838EAB;
   font-size: 100%;
 }
@@ -359,7 +352,6 @@ div.task-description {
 
 .task-description-heading {
   display: flex;
-  /* height: 2.5rem; */
   align-items: center;
   border-bottom: var(--task-sidebar-border);
 }
@@ -373,7 +365,6 @@ div.task-description {
 .programming-languages {
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
   height: 3.5em;
   padding: 0 15px;
   font-size: 90%;
@@ -398,11 +389,8 @@ div.task-description {
 }
 
 .actions {
-  /* align-self: center;
-  justify-self: center; */
   display: flex;
   height: 3.5em;
-  /* width: 30%; */
   padding: 2em;
   border-radius: 4px;
 }
@@ -445,7 +433,7 @@ div.task-description {
 
 .task-description-details h3 {
   margin-top: 0;
-}
+} */
 
 /* sidebar */
 

@@ -2,7 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { TaskWrapperDiv, TaskIntroDiv, StyledIcon, TaskIntroSubDiv, H3, Img, TaskSummaryDiv, TaskSummarySubDiv, TaskBottomDiv, P, Button } from './StyledTaskPreview';
+import { TaskWrapperDiv, TaskIntroDiv, StyledIcon, TaskIntroSubDiv, H3, Img, TaskSummaryDiv, TaskSummarySubDiv, TaskBottomDiv, P, ButtonDiv } from './StyledTaskPreview';
+import { ProgrammingLangSpan } from '../../views/Styled';
 
 export default props => {
     const { isThisProfileTask } = props; 
@@ -10,10 +11,12 @@ export default props => {
     return (
         <TaskWrapperDiv>
             <TaskIntroDiv>
+                {/* + */}
                 <div><StyledIcon icon={faTasks} /></div>
                 <TaskIntroSubDiv notLiNested>
                     <H3>Sortowanie bąbelkowe</H3>
-                    <div className="required-programming-languages">Dowolny język programowania</div>
+                    {/* + */}
+                    <ProgrammingLangSpan as="div">Dowolny język programowania</ProgrammingLangSpan>
                 </TaskIntroSubDiv>
                 <div><Img src="" alt="" /></div>
             </TaskIntroDiv>
@@ -36,7 +39,7 @@ export default props => {
             <TaskBottomDiv>
                 <P>1 godzinę temu</P>
                 <Link to="/task-details">
-                    <Button className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </Button>
+                    <ButtonDiv className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </ButtonDiv>
                 </Link>
             </TaskBottomDiv>
         </TaskWrapperDiv>

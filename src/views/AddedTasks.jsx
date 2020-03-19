@@ -1,5 +1,6 @@
 import React from 'react';
 import AddedTask from '../components/TaskPreview/AddedTask';
+import { GeneralInfoDiv, H2 } from './Styled';
 
 export default props => {
     const { isThisProfileTask } = props; 
@@ -7,13 +8,13 @@ export default props => {
     return (
         <>
             {!isThisProfileTask &&
-            <div className="task-general-info">
+            <GeneralInfoDiv>
                 <div>
-                    <h2>Zadania</h2>
-                    <h2>Aktywne: 100</h2>
+                    <H2 isPrimary>Zadania</H2>
+                    <H2>Aktywne: 100</H2>
                     {/* <p>Firmy: 100</p> */}
                 </div>
-            </div>
+            </GeneralInfoDiv>
             }
             <div className="task-area">
                 <AddedTask isThisProfileTask={isThisProfileTask}/>

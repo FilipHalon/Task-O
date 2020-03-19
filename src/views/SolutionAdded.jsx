@@ -1,24 +1,25 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCheck, faLongArrowAltRight, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { GeneralInfoDiv, H2, Img, TaskWrapperDiv, TaskHeadingDiv, StyledIcon, H3 } from './Styled';
 
 export default () => {
     return(
         <>
-            <div className="task-general-info">
+            <GeneralInfoDiv>
                 <div>
-                    <h2>Implementacja algorytmu sortowania</h2>
-                    <h2>Uniwersytet im. Adama Mickiewicza</h2>
+                    <H2 isPrimary>Implementacja algorytmu sortowania</H2>
+                    <H2>Uniwersytet im. Adama Mickiewicza</H2>
                 </div>
                 <div>
-                    <img src="/UAM-logo-siw-amu.jpg" alt="" />
+                    <Img src="/UAM-logo-siw-amu.jpg" alt="" />
                 </div>
-            </div>
-            <div className="task-border">
-                <div className="task-description-heading">
-                    <FontAwesomeIcon icon={faLightbulb} />
-                    <span>Zgłaszanie rozwiązania</span>
-                </div>
+            </GeneralInfoDiv>
+            <TaskWrapperDiv>
+                <TaskHeadingDiv>
+                    <StyledIcon icon={faLightbulb} />
+                    <H3>Zgłaszanie rozwiązania</H3>
+                </TaskHeadingDiv>
                 <div className="solution-add-area">
                     <div className="solution-add-message">
                         <div className="solution-add-message-top">
@@ -37,7 +38,7 @@ export default () => {
                         <span> Rozwiązanie wysłano pomyślnie</span>
                     </div>
                 </div>
-            </div>
+            </TaskWrapperDiv>
         </>
     )
 };

@@ -18,5 +18,7 @@ export default {
     fontInitalColor: "#000",
     fontBlurredColor: "#838EAB",
     primaryBoxShadow: "0px 7px 14px #32325D1A",
-    focusedBackgroundColor: "#fafafa"
+    focusedBackgroundColor: "#fafafa",
+    programmingLangBackgroundColor: "#D7D0F0",
+    programmingLangTextColor: "#5D47AA"
 }
