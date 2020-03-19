@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/task-o/static/css/main.0ccfd92f.chunk.css",
+    "main.js": "/task-o/static/js/main.216920c0.chunk.js",
+    "main.js.map": "/task-o/static/js/main.216920c0.chunk.js.map",
+    "runtime-main.js": "/task-o/static/js/runtime-main.849d92cd.js",
+    "runtime-main.js.map": "/task-o/static/js/runtime-main.849d92cd.js.map",
+    "static/css/2.1a1a1556.chunk.css": "/task-o/static/css/2.1a1a1556.chunk.css",
+    "static/js/2.c20ccf72.chunk.js": "/task-o/static/js/2.c20ccf72.chunk.js",
+    "static/js/2.c20ccf72.chunk.js.map": "/task-o/static/js/2.c20ccf72.chunk.js.map",
+    "index.html": "/task-o/index.html",
+    "precache-manifest.6ed7b8596c68f44190b2a846fba9bd80.js": "/task-o/precache-manifest.6ed7b8596c68f44190b2a846fba9bd80.js",
+    "service-worker.js": "/task-o/service-worker.js",
+    "static/css/2.1a1a1556.chunk.css.map": "/task-o/static/css/2.1a1a1556.chunk.css.map",
+    "static/css/main.0ccfd92f.chunk.css.map": "/task-o/static/css/main.0ccfd92f.chunk.css.map",
+    "static/js/2.c20ccf72.chunk.js.LICENSE.txt": "/task-o/static/js/2.c20ccf72.chunk.js.LICENSE.txt",
+    "static/media/taskoala.png": "/task-o/static/media/taskoala.753a0635.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.849d92cd.js",
+    "static/css/2.1a1a1556.chunk.css",
+    "static/js/2.c20ccf72.chunk.js",
+    "static/css/main.0ccfd92f.chunk.css",
+    "static/js/main.216920c0.chunk.js"
+  ]
+}
