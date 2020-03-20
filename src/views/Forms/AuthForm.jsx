@@ -8,6 +8,38 @@ export default props => {
     const { isEnterCodeStage, isRegisterForm } = props;
     const isDeveloperIcon = <span>{isDeveloperAccount ? <FontAwesomeIcon icon={faUser} /> : <FontAwesomeIcon icon={faBuilding} /> }</span>
     const lockIcon = <span><FontAwesomeIcon icon={faLock} /></span>
+    const createSignInUpForm = () => (
+        <>
+            {isRegisterForm && 
+            <li>
+                {isDeveloperIcon}
+                <input type="text" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
+            </li>
+            }
+            {
+            isRegisterForm &&
+            <li>
+                {isDeveloperIcon}
+                <input type="text" placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
+            </li>
+            }
+            <li>
+                {isDeveloperIcon}
+                <input type="email" placeholder="Podaj adres e-mail" />
+            </li>
+            <li>
+                {lockIcon}
+                <input type="password" placeholder="Podaj hasło" />
+            </li>
+            {
+            isRegisterForm &&
+            <li>
+                {lockIcon}
+                <input type="password" placeholder="Powtórz hasło" />
+            </li>
+            }
+        </>
+    );
 
     return (
         <div className="page-content-center">
@@ -15,47 +47,16 @@ export default props => {
             <h1>Rejestracja konta {isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!</h1> : 
             <h1>Logowanie do systemu Task-O!</h1>}
             <form className="auth-form">
-                {isEnterCodeStage &&
-                    <ul>
+                <ul>
+                    {isEnterCodeStage ?
                         <li>
                             <span><FontAwesomeIcon icon={faLock} /></span>
                             <input type="text" placeholder="Wprowadź kod autoryzacyjny" />
                         </li>
-                    </ul>
-                }
-                {!isEnterCodeStage && 
-                    <ul>
-                        {
-                        isRegisterForm && 
-                        <li>
-                            {isDeveloperIcon}
-                            <input type="text" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
-                        </li>
-                        }
-                        {
-                        isRegisterForm &&
-                        <li>
-                            {isDeveloperIcon}
-                            <input type="text" placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
-                        </li>
-                        }
-                        <li>
-                            {isDeveloperIcon}
-                            <input type="email" placeholder="Podaj adres e-mail" />
-                        </li>
-                        <li>
-                            {lockIcon}
-                            <input type="password" placeholder="Podaj hasło" />
-                        </li>
-                        {
-                        isRegisterForm &&
-                        <li>
-                            {lockIcon}
-                            <input type="password" placeholder="Powtórz hasło" />
-                        </li>
-                        }
-                    </ul>
-                }
+                        : 
+                        createSignInUpForm()
+                    }
+                </ul>
                 {isEnterCodeStage ?
                 <button type="submit" className="enter-code-stage-button">Zatwierdź</button> : 
                 <button type="submit" className={isRegisterForm ? "register-button" : "login-button"}>{isRegisterForm ? "Zarejestruj się" : "Zaloguj się"}</button>
