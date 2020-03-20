@@ -55,7 +55,7 @@ export default props => {
                         </li>
                         }
                     </ul>
-                    }
+                }
                 {isEnterCodeStage ?
                 <button type="submit" className="enter-code-stage-button">Zatwierdź</button> : 
                 <button type="submit" className={isRegisterForm ? "register-button" : "login-button"}>{isRegisterForm ? "Zarejestruj się" : "Zaloguj się"}</button>

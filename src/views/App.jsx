@@ -4,7 +4,7 @@ import Header from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import SignInPage from './SignInPage';
-import AuthForm from './AuthForm';
+import AuthForm from './Forms/AuthForm';
 import theme from '../components/Themes';
 import { ThemeProvider } from 'styled-components';
 import LoggedUserSections from './LoggedUserSections';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
-import { TaskWrapperDiv, TaskHeadingDiv, StyledIcon, H3 } from './Styled';
+import { TaskWrapperDiv, TaskHeadingDiv, StyledIcon, H3 } from '../Styled';
 
 export default props => {
     const { isNewSolution } = props;

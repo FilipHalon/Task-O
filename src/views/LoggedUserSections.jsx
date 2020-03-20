@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import AddedTasks from './AddedTasks';
-import ContentAddForm from './ContentAddForm';
+import ContentAddForm from './Forms/ContentAddForm';
 import TaskDetails from './TaskDetails';
 import SolutionAdded from './SolutionAdded';
 import Profile from './Profile/Profile';
