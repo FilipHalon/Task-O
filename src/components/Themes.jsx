@@ -5,7 +5,7 @@ export default {
     secondaryLightColor: "#F6F9FC",
     primaryLightColor: "#FFF",
     mainBackgroundColor: "#E6EBF1",
-    buttonGreen: "#39C3797E",
+    buttonGreen: "hsla(148, 55%, 49%, .5)",
     buttonGreenHover: "#39C379",
     buttonPurple: "#ad14c4",
     buttonPurpleHover: "#712aa3",
@@ -17,8 +17,10 @@ export default {
     iconPrimaryColor: "#838DAC",
     fontInitalColor: "#000",
     fontBlurredColor: "#838EAB",
-    primaryBoxShadow: "0px 7px 14px #32325D1A",
+    primaryBoxShadow: "0px 7px 14px hsla(240, 30%, 28%, .1)",
     focusedBackgroundColor: "#fafafa",
     programmingLangBackgroundColor: "#D7D0F0",
-    programmingLangTextColor: "#5D47AA"
+    programmingLangTextColor: "#5D47AA",
+    buttonGray: "#8F9DBE",
+    buttonGrayHover: "#7082a5"
 }

@@ -171,7 +171,7 @@ h1 {
 
 /* register page */
 
-form.auth-form {
+/* form.auth-form {
   display: flex;
   flex-direction: column;
   margin-top: 2%;
@@ -274,7 +274,7 @@ form a button:hover {
 
 button:hover {
   cursor: pointer;
-}
+} */
 
 /* success message */
 
@@ -691,17 +691,12 @@ div.task-description {
 form.solution-add-area {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* width: 100%; */
-  /* height: auto; */
-  /* align-items: center; */
 }
 
 .input-area {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 90%; */
   border: solid 1em transparent;
 }
 
