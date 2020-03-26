@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --navbar-text-color: #B5BDFB;
   --task-sidebar-border: 1px solid #E6EBF1;
   --button-green: #39C3797E;
@@ -9,12 +9,11 @@
   --button-orange-hover: #FF7325;
   --button-blue: #4457F3;
   --button-blue-hover: #5D6CED;
-}
+} */
 
 * {
   font-family: 'Fira Sans', sans-serif;
   line-height: 1.3;
-  /* letter-spacing: .05em; */
 }
 
 h1, h2, h3, h4 {
@@ -110,7 +109,7 @@ nav img {
 
 /* index page */
 
-.page-content-center {
+/* .page-content-center {
   min-height: 100%;
   width: 100%;
   display: flex;
@@ -129,7 +128,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1em;
-}
+} */
 
 /* .login-area {
   display: flex;

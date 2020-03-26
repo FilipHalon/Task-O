@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBuilding, faLock } from '@fortawesome/free-solid-svg-icons';
 import { Link, useLocation } from 'react-router-dom';
 import { AuthForm, Ul, Li, AuthInput, Span, EnterCodeButton, RegisterButton, LoginButton, SignUpToInButton, SignUpToInDiv } from './StyledForms';
+import { H1, ContentCenteredSection } from '../Styled';
 
 export default props => {
     const isDeveloperAccount = useLocation().state ? useLocation().state.isDeveloperAccount : false;
@@ -43,10 +44,12 @@ export default props => {
     );
 
     return (
-        <div className="page-content-center">
-            {isRegisterForm ? 
-            <h1>Rejestracja konta {isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!</h1> : 
-            <h1>Logowanie do systemu Task-O!</h1>}
+        <ContentCenteredSection>
+            <H1>{isRegisterForm ? 
+            `Rejestracja konta ${isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!` : 
+            "Logowanie do systemu Task-O!"
+            }
+            </H1>
             <AuthForm>
                 <Ul>
                     {isEnterCodeStage ?
@@ -72,6 +75,6 @@ export default props => {
                     </Link>
                 </SignUpToInDiv>
             </AuthForm>
-        </div>
+        </ContentCenteredSection>
     )
 }

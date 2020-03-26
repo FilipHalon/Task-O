@@ -7,6 +7,27 @@ export const Main = styled.main`
     background: ${props => props.theme.mainBackgroundColor};
 `;
 
+export const ContentCenteredSection = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+`;
+
+export const H1 = styled.h1`
+    font-size: 1.4rem;
+    text-align: center;
+`;
+
+export const LoginFormChoiceSection = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
+`;
+
 export const ContentSection = styled.section`
     width: 100%;
     border: solid 2em transparent;
