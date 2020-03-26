@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Header from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import SignInPage from './SignInPage';
+import SignInPage from './SignInPage/SignInPage';
 import AuthForm from './Forms/AuthForm';
 import theme from '../themes/Themes';
 import { ThemeProvider } from 'styled-components';

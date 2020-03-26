@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const TaskWrapperDiv = styled.div`
+export const ContentWrapperDiv = styled.div`
     border-radius: 4px;
     background-color: ${props => props.theme.primaryLightColor};
     font-size: 90%;
@@ -26,10 +25,6 @@ export const TaskIntroSubDiv = styled.div`
     }
 `;
 
-// export const StyledLink = styled(Link)`
-//     color: black;
-// `;
-
 export const StyledIcon = styled(FontAwesomeIcon)`
     padding-top: 2px;
     color: ${props => props.theme.buttonOrangeHover};
@@ -42,14 +37,14 @@ export const H3 = styled.h3`
 `;
 
 // +
-export const StyledUploadIcon = styled(FontAwesomeIcon)`
-    color: ${props => props.theme.iconPrimaryColor};
-    transition: .4s;
+// export const StyledUploadIcon = styled(FontAwesomeIcon)`
+//     color: ${props => props.theme.iconPrimaryColor};
+//     transition: .4s;
 
-    &:hover {
-        color: ${props => props.theme.buttonOrangeHover};
-    }
-`;
+//     &:hover {
+//         color: ${props => props.theme.buttonOrangeHover};
+//     }
+// `;
 
 export const Img = styled.image`
     width: 2em;

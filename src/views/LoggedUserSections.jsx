@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import AddedTasks from './AddedTasks/AddedTasks';
 import ContentAddForm from './Forms/ContentAddForm';
-import TaskDetails from './TaskDetails';
+import TaskDetails from './TaskDetails/TaskDetails';
 import SolutionAdded from './SolutionAdded/SolutionAdded';
 import Profile from './Profile/Profile';
 import TaskSidebar from '../components/TaskSidebar/TaskSidebar';

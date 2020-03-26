@@ -1,7 +1,8 @@
 import React from 'react';
 import { faLightbulb, faCloudUploadAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { GeneralInfoDiv, H2, Img, TaskWrapperDiv, TaskHeadingDiv, StyledIcon, H3, ProgrammingLangDiv, ProgrammingLangSpan, TaskDescDiv, ActionDiv, ActionSubDiv, LeftActionDiv, StyledUploadIcon } from './Styled';
+import { GeneralInfoDiv, H2, Img, ContentWrapperDiv, HeadingDiv, StyledIcon, H3, ProgrammingLangSpan, TaskDetailsStyledUploadIcon } from '../Styled';
+import { ProgrammingLangDiv, TaskDescDiv, ActionDiv, ActionSubDiv, LeftActionDiv } from './StyledTaskDetails';
 
 export default () => {
     return (
@@ -15,8 +16,8 @@ export default () => {
                     <Img src="" alt="" />
                 </div>
             </GeneralInfoDiv>
-            <TaskWrapperDiv>
-                <TaskHeadingDiv>
+            <ContentWrapperDiv>
+                <HeadingDiv>
                     <StyledIcon icon={faLightbulb} />
                     <H3>Opis zadania</H3>
                     {/* <div>
@@ -27,7 +28,7 @@ export default () => {
                         <span><FontAwesomeIcon icon={faThumbsUp} /></span>
                         <span>1000</span>
                     </div> */}
-                </TaskHeadingDiv>
+                </HeadingDiv>
                 <ProgrammingLangDiv>
                     {/* <div>
                         <span>Limit pamięci</span>
@@ -42,10 +43,10 @@ export default () => {
                     <LeftActionDiv>Możliwe akcje</LeftActionDiv>
                     <ActionSubDiv>
                         <Link to="/new-solution-add">
-                            <StyledUploadIcon icon={faCloudUploadAlt} />
+                            <TaskDetailsStyledUploadIcon icon={faCloudUploadAlt} />
                         </Link>
                         <Link to="/new-solution-add">
-                            <StyledUploadIcon icon={faPaperPlane} />
+                            <TaskDetailsStyledUploadIcon icon={faPaperPlane} />
                         </Link>
                     </ActionSubDiv>
                 </ActionDiv>
@@ -57,7 +58,7 @@ export default () => {
                         <p>Wyjście Twojego programu powinno stanowić dokładnie tyle samo wierszy, ile liczb było na standardowym wejściu. Liczby te muszą być wypisane w porządku niemalejącym.</p>
                     </div>
                 </TaskDescDiv>
-            </TaskWrapperDiv>
+            </ContentWrapperDiv>
         </>
     )
 }

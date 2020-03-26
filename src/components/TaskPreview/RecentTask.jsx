@@ -1,7 +1,8 @@
 import React from 'react';
 import { faTasks, faCloud } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { TaskIntroDiv, TaskIntroSubDiv, H3, StyledIcon, StyledUploadIcon } from './StyledTaskPreview';
+import { TaskIntroDiv, TaskIntroSubDiv, H3, StyledIcon } from './StyledTaskPreview';
+import { StyledUploadIcon } from '../../views/Styled';
 
 
 export default () => {

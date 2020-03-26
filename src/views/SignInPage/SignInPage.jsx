@@ -1,7 +1,8 @@
 import React from 'react';
-import SignInField from '../components/SignInField/SignInField';
+import SignInField from '../../components/SignInField/SignInField';
 import { Link } from 'react-router-dom';
-import { H1, LoginFormChoiceSection, ContentCenteredSection } from './Styled';
+import { H1, ContentCenteredSection } from '../Styled';
+import { LoginFormChoiceSection } from './StyledSignInPage';
 
 
 export default () => (        

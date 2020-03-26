@@ -2,14 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { TaskWrapperDiv, TaskIntroDiv, StyledIcon, TaskIntroSubDiv, H3, Img, TaskSummaryDiv, TaskSummarySubDiv, TaskBottomDiv, P, ButtonDiv } from './StyledTaskPreview';
+import { ContentWrapperDiv, TaskIntroDiv, StyledIcon, TaskIntroSubDiv, H3, Img, TaskSummaryDiv, TaskSummarySubDiv, TaskBottomDiv, P, ButtonDiv } from './StyledTaskPreview';
 import { ProgrammingLangSpan } from '../../views/Styled';
 
 export default props => {
     const { isThisProfileTask } = props; 
 
     return (
-        <TaskWrapperDiv>
+        <ContentWrapperDiv>
             <TaskIntroDiv>
                 {/* + */}
                 <div><StyledIcon icon={faTasks} /></div>
@@ -42,6 +42,6 @@ export default props => {
                     <ButtonDiv className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </ButtonDiv>
                 </Link>
             </TaskBottomDiv>
-        </TaskWrapperDiv>
+        </ContentWrapperDiv>
     )
 }

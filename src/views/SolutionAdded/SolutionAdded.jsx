@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCheck, faLongArrowAltRight, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { GeneralInfoDiv, H2, Img, TaskWrapperDiv, TaskHeadingDiv, StyledIcon, H3 } from '../Styled';
+import { GeneralInfoDiv, H2, Img, ContentWrapperDiv, HeadingDiv, StyledIcon, H3 } from '../Styled';
 import { MessageWrapperDiv, MessageContentDiv, MessageContentSubDiv, P, ButtonDiv, Button, StatusDiv } from './StyledSolutionAdded';
 
 export default () => {
@@ -16,11 +16,11 @@ export default () => {
                     <Img src="/UAM-logo-siw-amu.jpg" alt="" />
                 </div>
             </GeneralInfoDiv>
-            <TaskWrapperDiv>
-                <TaskHeadingDiv>
+            <ContentWrapperDiv>
+                <HeadingDiv>
                     <StyledIcon icon={faLightbulb} />
                     <H3>Zgłaszanie rozwiązania</H3>
-                </TaskHeadingDiv>
+                </HeadingDiv>
                 <div className="solution-add-area">
                     <MessageWrapperDiv>
                         <MessageContentDiv>
@@ -38,7 +38,7 @@ export default () => {
                         <P><FontAwesomeIcon icon={faCheck} /> Rozwiązanie wysłano pomyślnie</P>
                     </StatusDiv>
                 </div>
-            </TaskWrapperDiv>
+            </ContentWrapperDiv>
         </>
     )
 };

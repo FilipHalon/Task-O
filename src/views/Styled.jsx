@@ -21,13 +21,6 @@ export const H1 = styled.h1`
     text-align: center;
 `;
 
-export const LoginFormChoiceSection = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1em;
-`;
-
 export const ContentSection = styled.section`
     width: 100%;
     border: solid 2em transparent;
@@ -52,13 +45,13 @@ export const H2 = styled.h2`
 export const Img = styled.img`
     width: 4em;
 `;
-// +
-export const TaskWrapperDiv = styled.div`
+
+export const ContentWrapperDiv = styled.div`
     background: ${props => props.theme.primaryLightColor};
     border-radius: 4px;
 `;
-// +
-export const TaskHeadingDiv = styled.div`
+
+export const HeadingDiv = styled.div`
     display: flex;
     align-items: center;
     border-bottom: ${props => props.theme.taskSidebarBorder};
@@ -70,15 +63,6 @@ export const StyledIcon = styled(FontAwesomeIcon)`
     color: ${props => props.theme.iconPrimaryColor};
 `;
 
-export const ProgrammingLangDiv = styled.div`
-    display: flex;
-    align-items: center;
-    height: 3.5em;
-    padding: 0 15px;
-    font-size: 90%;
-    border-bottom: ${props => props.theme.taskSidebarBorder};
-`;
-
 export const ProgrammingLangSpan = styled.span`
     padding: 1%;
     border-radius: 10px;
@@ -87,40 +71,7 @@ export const ProgrammingLangSpan = styled.span`
     color: ${props => props.theme.programmingLangTextColor};
 `;
 
-export const TaskDescDiv = styled.div`
-    padding: 15px;
-    background: ${props => props.isSummary && props.theme.secondaryLightColor};
-`;
-
-export const ActionDiv = styled.div`
-    display: flex;
-    height: 3.5em;
-    padding: 2em;
-    border-radius: 4px;
-`;
-
-export const ActionSubDiv = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    box-shadow: ${props => props.theme.primaryBoxShadow};
-    border-radius: 4px;
-`;
-
-export const LeftActionDiv = styled(ActionSubDiv)`
-    background: ${props => props.theme.buttonBlue};
-    color: ${props => props.theme.primaryLightColor};
-    font-size: 90%;
-
-    @media (min-width: 340px) {
-        font-size: 100%;
-    }
-`;
-// +
 export const StyledUploadIcon = styled(FontAwesomeIcon)`
-    margin: 15px;
     color: ${props => props.theme.iconPrimaryColor};
     transition: .4s;
     cursor: pointer;
@@ -128,6 +79,10 @@ export const StyledUploadIcon = styled(FontAwesomeIcon)`
     &:hover {
         color: ${props => props.theme.buttonOrangeHover};
     }
+`;
+
+export const TaskDetailsStyledUploadIcon = styled(StyledUploadIcon)`
+    margin: 15px;
 `;
 
 export const H3 = styled.h3`
