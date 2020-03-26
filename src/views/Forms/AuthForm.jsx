@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBuilding, faLock } from '@fortawesome/free-solid-svg-icons';
 import { Link, useLocation } from 'react-router-dom';
-import { AuthForm, Ul, Li, Input, Span, EnterCodeButton, RegisterButton, LoginButton, SignUpToInButton, SignUpToInDiv } from './StyledForms';
+import { AuthForm, Ul, Li, AuthInput, Span, EnterCodeButton, RegisterButton, LoginButton, SignUpToInButton, SignUpToInDiv } from './StyledForms';
 
 export default props => {
     const isDeveloperAccount = useLocation().state ? useLocation().state.isDeveloperAccount : false;
@@ -14,29 +14,29 @@ export default props => {
             {isRegisterForm && 
             <Li>
                 {isDeveloperIcon}
-                <Input type="text" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
+                <AuthInput type="text" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
             </Li>
             }
             {
             isRegisterForm &&
             <Li>
                 {isDeveloperIcon}
-                <Input type="text" placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
+                <AuthInput type="text" placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
             </Li>
             }
             <Li>
                 {isDeveloperIcon}
-                <Input type="email" placeholder="Podaj adres e-mail" />
+                <AuthInput type="email" placeholder="Podaj adres e-mail" />
             </Li>
             <Li>
                 {lockIcon}
-                <Input type="password" placeholder="Podaj hasło" />
+                <AuthInput type="password" placeholder="Podaj hasło" />
             </Li>
             {
             isRegisterForm &&
             <Li>
                 {lockIcon}
-                <Input type="password" placeholder="Powtórz hasło" />
+                <AuthInput type="password" placeholder="Powtórz hasło" />
             </Li>
             }
         </>
@@ -52,7 +52,7 @@ export default props => {
                     {isEnterCodeStage ?
                         <Li>
                             <Span><FontAwesomeIcon icon={faLock} /></Span>
-                            <Input type="text" placeholder="Wprowadź kod autoryzacyjny" />
+                            <AuthInput type="text" placeholder="Wprowadź kod autoryzacyjny" />
                         </Li>
                         : 
                         createSignInUpForm()

@@ -1,8 +1,11 @@
 import styled, { css } from "styled-components";
 
-export const AuthForm = styled.form`
+export const Form = styled.form`
     display: flex;
     flex-direction: column;
+`;
+
+export const AuthForm = styled(Form)`
     margin-top: 2%;
     width: 90%;
     max-width: 550px;
@@ -28,7 +31,7 @@ const FormElementTemplate = css`
     font-size: 110%;
 `;
 
-export const Input = styled.input`
+export const AuthInput = styled.input`
     ${FormElementTemplate}
     width: 100%;
     padding-left: 1.75rem;
@@ -41,10 +44,6 @@ export const Span = styled.span`
     align-items: center;
     width: 54px;
     border-right: ${props => props.theme.taskSidebarBorder};
-`;
-
-export const Textarea = styled.textarea`
-    ${FormElementTemplate}
 `;
 
 const ButtonTemplate = styled.button`
@@ -96,4 +95,39 @@ export const SignUpToInButton = styled(ButtonTemplate)`
     &:hover {
         color: ${props => props.theme.buttonGrayHover};
     }
+`;
+
+export const InputDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1em transparent;
+`;
+
+const ContentAddFormElementTemplate = css`
+    ${FormElementTemplate}
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: ${props => props.theme.primaryBoxShadow};
+`
+
+export const Textarea = styled.textarea`
+    ${ContentAddFormElementTemplate}
+    height: initial;
+    width: 90%;
+`;
+
+export const ContentAddInput = styled.input`
+    ${ContentAddFormElementTemplate}
+    width: 90%;
+`;
+
+export const BottomDiv = styled.div`
+    align-self: center;
+`;
+
+export const ContentAddButton = styled(LoginButton)`
+    margin: 1em;
+    margin-top: 0;
+    height: 45px;
 `;
