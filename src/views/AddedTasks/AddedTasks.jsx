@@ -1,6 +1,7 @@
 import React from 'react';
-import AddedTask from '../components/TaskPreview/AddedTask';
-import { GeneralInfoDiv, H2 } from './Styled';
+import AddedTask from '../../components/TaskPreview/AddedTask';
+import { GeneralInfoDiv, H2 } from '../Styled';
+import { TaskListSection } from './StyledAddedTasks';
 
 export default props => {
     const { isThisProfileTask } = props; 
@@ -16,11 +17,11 @@ export default props => {
                 </div>
             </GeneralInfoDiv>
             }
-            <div className="task-area">
+            <TaskListSection>
                 <AddedTask isThisProfileTask={isThisProfileTask}/>
                 <AddedTask isThisProfileTask={isThisProfileTask}/>
                 <AddedTask isThisProfileTask={isThisProfileTask}/>
-            </div>
+            </TaskListSection>
         </>
     )
 };
