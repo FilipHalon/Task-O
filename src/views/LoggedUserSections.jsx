@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import AddedTasks from './AddedTasks';
 import ContentAddForm from './Forms/ContentAddForm';
 import TaskDetails from './TaskDetails';
-import SolutionAdded from './SolutionAdded';
+import SolutionAdded from './SolutionAdded/SolutionAdded';
 import Profile from './Profile/Profile';
 import TaskSidebar from '../components/TaskSidebar/TaskSidebar';
 

@@ -22,5 +22,6 @@ export default {
     programmingLangBackgroundColor: "#D7D0F0",
     programmingLangTextColor: "#5D47AA",
     buttonGray: "#8F9DBE",
-    buttonGrayHover: "#7082a5"
+    buttonGrayHover: "#7082a5",
+    buttonBlack: "#212844"
 }
