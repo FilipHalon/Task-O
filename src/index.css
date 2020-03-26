@@ -285,41 +285,22 @@ button:hover {
 
 /* tasks */
 
-main {
-  /* display: grid; */
+/* main {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* grid: auto / 3fr 7fr; */
-  /* margin: 0; */
-  /* padding: 0; */
   min-height: 100%;
-  /* width: 100%; */
   background: #E6EBF1;
 
 }
 
 section.task-description {
-  /* display: inline-block; */
   width: 100%;
-  /* box-sizing: padding-box; */
-  /* padding: 5%; */
-  /* max-width: 60%; */
   border: solid 2em transparent;
-  /* display: flex;
-  justify-content: center; */
-  /* max-width: 70%; */
 }
 
 div.task-description {
-  /* position: absolute;
-  left: 350px; */
-  /* display: flex;
-  flex-direction: column; */
-  /* width: 100%; */
   max-width: 900px;
-  /* margin: 10%; */
   line-height: 1.2em;
-}
+} */
 
 /* .task-general-info {
   display: flex;
@@ -598,7 +579,7 @@ div.task-description {
 
 /* active tasks */
 
-.task-area {
+/* .task-area {
   display: grid;
   grid: auto / 1fr;
   grid-gap: 2em;
@@ -610,7 +591,7 @@ div.task-description {
     grid: auto / 1fr 1fr;
     grid-gap: 2em;
   }
-}
+} */
 
 /* solution add */
 

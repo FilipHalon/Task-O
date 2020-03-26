@@ -6,14 +6,15 @@ import TaskDetails from './TaskDetails';
 import SolutionAdded from './SolutionAdded/SolutionAdded';
 import Profile from './Profile/Profile';
 import TaskSidebar from '../components/TaskSidebar/TaskSidebar';
+import { ContentSection, ContentDiv } from './Styled';
 
 export default () => {
     
     return (
         <>
             <TaskSidebar />
-            <section className="task-description">
-                <div className="task-description">
+            <ContentSection>
+                <ContentDiv>
                 <Switch>
                     <Route exact path="/">
                         <Profile />
@@ -37,8 +38,8 @@ export default () => {
                         <SolutionAdded />
                     </Route>
                 </Switch>
-                </div>
-            </section>
+                </ContentDiv>
+            </ContentSection>
         </>
     )
 }

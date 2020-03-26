@@ -8,13 +8,14 @@ import AuthForm from './Forms/AuthForm';
 import theme from '../components/Themes';
 import { ThemeProvider } from 'styled-components';
 import LoggedUserSections from './LoggedUserSections';
+import { Main } from './Styled';
 
 export default () => {
     return (
         <ThemeProvider theme={theme}>
             <BrowserRouter>
                 <Header />
-                <main>
+                <Main>
                     <Switch>
                         <Route path="/welcome">
                             <SignInPage />
@@ -36,9 +37,9 @@ export default () => {
                             <LoggedUserSections />
                         </Route>
                     </Switch>
-                </main>
+                </Main>
                 <Footer />
             </BrowserRouter>
         </ThemeProvider>
     )
-}
+};

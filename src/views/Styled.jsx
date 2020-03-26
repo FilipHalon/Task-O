@@ -1,6 +1,22 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+export const Main = styled.main`
+    display: flex;
+    min-height: 100%;
+    background: ${props => props.theme.mainBackgroundColor};
+`;
+
+export const ContentSection = styled.section`
+    width: 100%;
+    border: solid 2em transparent;
+`;
+
+export const ContentDiv = styled.div`
+    max-width: 900px;
+    line-height: 1.2em;
+`;
+
 export const GeneralInfoDiv = styled.div`
     display: flex;
     justify-content: space-between;
