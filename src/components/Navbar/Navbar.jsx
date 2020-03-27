@@ -2,10 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faTasks, faComments, faCommentDots, faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
 import Taskoala from '../../assets/taskoala.png';
-import { Header, Ul, Div, Li, StyledLink, Img } from './StyledNavbar';
+import { Header, Ul, Div, Li, StyledLink, Img, StyledLogoLink } from './StyledNavbar';
 
 export default props => {
-    const isLogged = props.isLogged === "logged";
+    const { isLogged } = props;
 
     return (
         <Header>
@@ -13,9 +13,9 @@ export default props => {
                 <Ul>
                     <Div>
                         <Li>
-                            <StyledLink to="/" islogo="true">
+                            <StyledLogoLink to="/">
                                 <Img src={Taskoala} alt="taskoala" />
-                            </StyledLink>
+                            </StyledLogoLink>
                         </Li>
                         <Li>
                             <StyledLink to="/tasks">
@@ -63,4 +63,4 @@ export default props => {
             </nav>
         </Header>
     )
-}
+};

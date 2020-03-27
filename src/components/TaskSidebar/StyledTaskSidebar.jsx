@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const Section = styled.section`
+export const Aside = styled.aside`
     display: none;
     position: absolute;
     min-height: 100%;
@@ -40,9 +40,9 @@ export const Input = styled.input`
     }
 `;
 
-export const H3 = styled.h3`
+export const H2 = styled.h2`
     font-weight: bold;
-    font-size: 90%;
+    font-size: .95em;
 `;
 
 export const Ul = styled.ul`

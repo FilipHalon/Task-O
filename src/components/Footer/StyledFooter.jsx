@@ -7,4 +7,4 @@ export const Footer = styled.footer`
     text-align: center;
     font-size: 90%;
     font-weight: bold;
-`
+`;

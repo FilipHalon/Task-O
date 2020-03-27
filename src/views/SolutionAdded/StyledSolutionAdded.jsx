@@ -21,26 +21,6 @@ export const P = styled.p`
     padding: .3rem;
 `;
 
-export const ButtonDiv = styled.div`
-    background: ${props => props.theme.buttonBlack};
-`;
-// +
-export const Button = styled.button`
-    padding: .3em;
-    margin: .6em 1.6em;
-    border: 1px solid ${props => props.theme.iconPrimaryColor};
-    border-radius: 4px;
-    background: ${props => props.theme.buttonBlack};
-    color: ${props => props.theme.iconPrimaryColor};
-    cursor: pointer;
-    transition: .4s;
-
-    &:hover {
-        background: ${props => props.theme.iconPrimaryColor};
-        color: ${props => props.theme.buttonBlack};
-    }
-`;
-
 export const StatusDiv = styled.div`
     padding: .6em;
     background: ${props => props.theme.buttonBlue};

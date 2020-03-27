@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCheck, faLongArrowAltRight, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { GeneralInfoDiv, H2, Img, ContentWrapperDiv, HeadingDiv, StyledIcon, H3 } from '../Styled';
-import { MessageWrapperDiv, MessageContentDiv, MessageContentSubDiv, P, ButtonDiv, Button, StatusDiv } from './StyledSolutionAdded';
+import { GeneralInfoDiv, H2, Img, ContentWrapperDiv, HeadingDiv, StyledIcon, H3, SolutionButtonDiv, SolutionButton } from '../Styled';
+import { MessageWrapperDiv, MessageContentDiv, MessageContentSubDiv, P, StatusDiv } from './StyledSolutionAdded';
 
 export default () => {
     return(
@@ -30,9 +30,9 @@ export default () => {
                                 <P><FontAwesomeIcon icon={faLongArrowAltRight} /> Wysłanych rozwiązań: 1</P>
                             </MessageContentSubDiv>
                         </MessageContentDiv>
-                        <ButtonDiv>
-                            <Button><FontAwesomeIcon icon={faPaperPlane} /> Wyślij wiadomość</Button>
-                        </ButtonDiv>
+                        <SolutionButtonDiv>
+                            <SolutionButton><FontAwesomeIcon icon={faPaperPlane} /> Wyślij wiadomość</SolutionButton>
+                        </SolutionButtonDiv>
                     </MessageWrapperDiv>
                     <StatusDiv>
                         <P><FontAwesomeIcon icon={faCheck} /> Rozwiązanie wysłano pomyślnie</P>

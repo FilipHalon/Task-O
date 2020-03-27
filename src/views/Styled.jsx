@@ -1,5 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+export const ButtonTemplate = css`
+    border: 0;
+    border-radius: 4px;
+    transition: .4s;
+    cursor: pointer;
+`
 
 export const Main = styled.main`
     display: flex;
@@ -63,7 +70,8 @@ export const StyledIcon = styled(FontAwesomeIcon)`
     color: ${props => props.theme.iconPrimaryColor};
 `;
 
-export const ProgrammingLangSpan = styled.span`
+export const ProgrammingLangP = styled.p`
+    margin: 0;
     padding: 1%;
     border-radius: 10px;
     width: 100%;
@@ -88,4 +96,24 @@ export const TaskDetailsStyledUploadIcon = styled(StyledUploadIcon)`
 export const H3 = styled.h3`
     font-size: 100%;
     margin-top: ${props => props.isBetweenDivs && "0"};
+`;
+
+export const SolutionButtonDiv = styled.div`
+    background: ${props => props.theme.buttonBlack};
+`;
+// +
+export const SolutionButton = styled.button`
+    padding: .3em;
+    margin: .6em 1.6em;
+    border: 1px solid ${props => props.theme.iconPrimaryColor};
+    border-radius: 4px;
+    background: ${props => props.theme.buttonBlack};
+    color: ${props => props.theme.iconPrimaryColor};
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+        background: ${props => props.theme.iconPrimaryColor};
+        color: ${props => props.theme.buttonBlack};
+    }
 `;

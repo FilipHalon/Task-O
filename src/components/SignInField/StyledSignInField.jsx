@@ -18,7 +18,7 @@ export const Div = styled.div`
     }
 `;
 
-export const Span = styled.span`
+export const P = styled.p`
     margin: 1rem;
     ${props => props.isIconWrapper && "align-self: flex-end; font-size: 2em;"}
 `;

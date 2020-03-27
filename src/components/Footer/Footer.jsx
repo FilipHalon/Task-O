@@ -7,4 +7,4 @@ export default () => {
             <span>&copy; 2020 Task-O!</span>
         </Footer>
     )
-}
+};

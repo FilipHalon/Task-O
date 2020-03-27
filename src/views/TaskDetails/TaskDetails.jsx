@@ -1,7 +1,7 @@
 import React from 'react';
 import { faLightbulb, faCloudUploadAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { GeneralInfoDiv, H2, Img, ContentWrapperDiv, HeadingDiv, StyledIcon, H3, ProgrammingLangSpan, TaskDetailsStyledUploadIcon } from '../Styled';
+import { GeneralInfoDiv, H2, Img, ContentWrapperDiv, HeadingDiv, StyledIcon, H3, ProgrammingLangP, TaskDetailsStyledUploadIcon } from '../Styled';
 import { ProgrammingLangDiv, TaskDescDiv, ActionDiv, ActionSubDiv, LeftActionDiv } from './StyledTaskDetails';
 
 export default () => {
@@ -34,7 +34,7 @@ export default () => {
                         <span>Limit pamięci</span>
                         <span>1024 MB</span>
                     </div> */}
-                    <ProgrammingLangSpan>Dowolny język programowania</ProgrammingLangSpan>
+                    <ProgrammingLangP>Dowolny język programowania</ProgrammingLangP>
                 </ProgrammingLangDiv>
                 <TaskDescDiv isSummary>
                     Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. Napisz program, który będzie wczytywał liczby ze standardowego wejścia, tak długo, aż wczytaną liczbą będzie 0 oraz wypisze wszystkie wczytane liczby w porządku niemalejącym.

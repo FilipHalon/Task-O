@@ -2,46 +2,44 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { ContentWrapperDiv, TaskIntroDiv, StyledIcon, TaskIntroSubDiv, H3, Img, TaskSummaryDiv, TaskSummarySubDiv, TaskBottomDiv, P, ButtonDiv } from './StyledTaskPreview';
-import { ProgrammingLangSpan } from '../../views/Styled';
+import { TaskIntroSection, StyledIcon, TaskIntroDiv, Img, TaskSummaryP, TaskBottomSection, BottomP, BottomButton, Article, TaskSummarySection, ListH3 } from './StyledTaskPreview';
+import { ProgrammingLangP, SolutionButtonDiv, SolutionButton } from '../../views/Styled';
 
 export default props => {
     const { isThisProfileTask } = props; 
 
     return (
-        <ContentWrapperDiv>
-            <TaskIntroDiv>
-                {/* + */}
-                <div><StyledIcon icon={faTasks} /></div>
-                <TaskIntroSubDiv notLiNested>
-                    <H3>Sortowanie bąbelkowe</H3>
-                    {/* + */}
-                    <ProgrammingLangSpan as="div">Dowolny język programowania</ProgrammingLangSpan>
-                </TaskIntroSubDiv>
+        <Article>
+            <TaskIntroSection>
+                <StyledIcon icon={faTasks} />
+                <TaskIntroDiv notLiNested>
+                    <ListH3>Sortowanie bąbelkowe</ListH3>
+                    <ProgrammingLangP>Dowolny język programowania</ProgrammingLangP>
+                </TaskIntroDiv>
                 <div><Img src="" alt="" /></div>
-            </TaskIntroDiv>
-            <TaskSummaryDiv>
+            </TaskIntroSection>
+            <TaskSummarySection>
                 {isThisProfileTask ?
-                <TaskSummarySubDiv>
+                <TaskSummaryP>
                     Autor rozwiązania: Jan Kowalski
-                </TaskSummarySubDiv>
+                </TaskSummaryP>
                 :
-                <TaskSummarySubDiv>
+                <TaskSummaryP>
                     Twoim zadaniem będzie posortowanie ciągu liczb całkowitych. Jednakże nie podajemy ograniczenia na liczbę elementów tego ciągu. 
-                </TaskSummarySubDiv>
+                </TaskSummaryP>
                 }
-            </TaskSummaryDiv>
+            </TaskSummarySection>
             {isThisProfileTask &&
-            <div className="solution-add-message-bottom">
-                <button><FontAwesomeIcon icon={faPaperPlane} /> Wyślij wiadomość</button>
-            </div>
+            <SolutionButtonDiv>
+                <SolutionButton><FontAwesomeIcon icon={faPaperPlane} /> Wyślij wiadomość</SolutionButton>
+            </SolutionButtonDiv>
             }
-            <TaskBottomDiv>
-                <P>1 godzinę temu</P>
+            <TaskBottomSection>
+                <BottomP>1 godzinę temu</BottomP>
                 <Link to="/task-details">
-                    <ButtonDiv className="task-link">Zobacz <FontAwesomeIcon icon={faTasks} /> </ButtonDiv>
+                    <BottomButton>Zobacz <FontAwesomeIcon icon={faTasks} /> </BottomButton>
                 </Link>
-            </TaskBottomDiv>
-        </ContentWrapperDiv>
+            </TaskBottomSection>
+        </Article>
     )
-}
+};
