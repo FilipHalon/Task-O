@@ -1,7 +1,7 @@
 import React from 'react';
 import { faLightbulb, faCloudUploadAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { GeneralInfoSection, H2, Img, ContentWrapperDiv, HeadingSection, StyledIcon, H3, ProgrammingLangP, TaskDetailsStyledUploadIcon, GeneralInfoH1 } from '../Styled';
+import { GeneralInfoSection, H2, Img, Article, HeadingSection, StyledIcon, H3, ProgrammingLangP, TaskDetailsStyledUploadIcon, GeneralInfoH1 } from '../Styled';
 import { ProgrammingLangDiv, TaskDescDiv, ActionDiv, ActionSubDiv, LeftActionDiv } from './StyledTaskDetails';
 
 export default () => {
@@ -16,7 +16,7 @@ export default () => {
                     <Img src="" alt="" />
                 </div>
             </GeneralInfoSection>
-            <ContentWrapperDiv>
+            <Article>
                 <HeadingSection>
                     <StyledIcon icon={faLightbulb} />
                     <H3>Opis zadania</H3>
@@ -58,7 +58,7 @@ export default () => {
                         <p>Wyjście Twojego programu powinno stanowić dokładnie tyle samo wierszy, ile liczb było na standardowym wejściu. Liczby te muszą być wypisane w porządku niemalejącym.</p>
                     </div>
                 </TaskDescDiv>
-            </ContentWrapperDiv>
+            </Article>
         </>
     )
 }

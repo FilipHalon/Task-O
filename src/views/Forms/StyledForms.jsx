@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ButtonTemplate } from "../Styled";
+import { buttonTemplate } from "../Styled";
 
 export const Form = styled.form`
     display: flex;
@@ -48,7 +48,7 @@ export const Span = styled.span`
 `;
 
 export const AuthButton = styled.button`
-    ${ButtonTemplate}
+    ${buttonTemplate}
     ${FormElementTemplate}
     margin-top: 5%;
     color: ${props => props.theme.primaryLightColor};

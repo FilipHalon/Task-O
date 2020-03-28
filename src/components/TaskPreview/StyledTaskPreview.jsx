@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ButtonTemplate } from "../../views/Styled";
+import { buttonTemplate } from "../../views/Styled";
 
 export const Article = styled.article`
     border-radius: 4px;
@@ -71,7 +71,7 @@ export const BottomP = styled.p`
 `;
 
 export const BottomButton = styled.button`
-    ${ButtonTemplate}
+    ${buttonTemplate}
     padding: .5rem;
     color: ${props => props.theme.primaryLightColor};
     background-color: ${props => props.theme.buttonBlue};

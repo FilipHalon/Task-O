@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
-import { ContentWrapperDiv, HeadingSection, StyledIcon, H3 } from '../Styled';
+import { Article, HeadingSection, StyledIcon, H3 } from '../Styled';
 import { Form, InputSection, Textarea, ContentAddInput, BottomSection, ContentAddButton } from './StyledForms';
 
 export default props => {
@@ -9,7 +9,7 @@ export default props => {
 
     return(
         <>
-            <ContentWrapperDiv>
+            <Article>
                 <HeadingSection>
                     <StyledIcon icon={faLightbulb} />
                     <H3>Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</H3>
@@ -30,7 +30,7 @@ export default props => {
                     </BottomSection>
                     </InputSection>
                 </Form>
-            </ContentWrapperDiv>
+            </Article>
         </>
     )
 };

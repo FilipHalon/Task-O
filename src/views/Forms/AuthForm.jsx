@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBuilding, faLock } from '@fortawesome/free-solid-svg-icons';
 import { Link, useLocation } from 'react-router-dom';
 import { AuthForm, Ul, Li, AuthInput, Span, EnterCodeButton, RegisterButton, LoginButton, SignUpToInButton, SignUpToInDiv } from './StyledForms';
-import { H1, ContentCenteredSection } from '../Styled';
+import { H1, CenteredContentSection } from '../Styled';
 
 export default props => {
     const isDeveloperAccount = useLocation().state ? useLocation().state.isDeveloperAccount : false;
@@ -44,7 +44,7 @@ export default props => {
     );
 
     return (
-        <ContentCenteredSection>
+        <CenteredContentSection>
             <H1>{isRegisterForm ? 
             `Rejestracja konta ${isDeveloperAccount ? 'programisty' : 'firmy'} do systemu Task-O!` : 
             "Logowanie do systemu Task-O!"
@@ -75,6 +75,6 @@ export default props => {
                     </Link>
                 </SignUpToInDiv>
             </AuthForm>
-        </ContentCenteredSection>
+        </CenteredContentSection>
     )
 };

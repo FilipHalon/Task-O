@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const ButtonTemplate = css`
+export const buttonTemplate = css`
     border: 0;
     border-radius: 4px;
     transition: .4s;
     cursor: pointer;
-`
+`;
 
 export const Main = styled.main`
     display: flex;
@@ -14,7 +14,7 @@ export const Main = styled.main`
     background: ${props => props.theme.mainBackgroundColor};
 `;
 
-export const ContentCenteredSection = styled.section`
+export const CenteredContentSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@ export const Img = styled.img`
     width: 4em;
 `;
 
-export const ContentWrapperDiv = styled.div`
+export const Article = styled.article`
     background: ${props => props.theme.primaryLightColor};
     border-radius: 4px;
 `;
