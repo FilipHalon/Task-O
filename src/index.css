@@ -53,7 +53,7 @@ a {
 }
 
 nav ul {
-  background-color: #465DEF;
+  background: #465DEF;
   margin: 0;
   padding: 0;
   display: flex;
@@ -144,19 +144,19 @@ h1 {
 }
 
 .developer-account {
-  background-color: var(--button-blue-hover);
+  background: var(--button-blue-hover);
 }
 
 .developer-account:hover {
-  background-color: var(--button-blue);
+  background: var(--button-blue);
 }
 
 .company-account {
-  background-color: var(--button-orange);
+  background: var(--button-orange);
 }
 
 .company-account:hover {
-  background-color: var(--button-orange-hover);
+  background: var(--button-orange-hover);
 }
 
 .login-area span {
@@ -231,27 +231,27 @@ form > div > button {
 }
 
 .register-button {
-  background-color: #EB9771;
+  background: #EB9771;
 }
 
 .register-button:hover {
-  background-color: #FF7325;
+  background: #FF7325;
 }
 
 .login-button {
-  background-color: var(--button-green);
+  background: var(--button-green);
 }
 
 .login-button:hover {
-  background-color: var(--button-green-hover);
+  background: var(--button-green-hover);
 }
 
 .enter-code-stage-button {
-  background-color: var(--button-purple);
+  background: var(--button-purple);
 }
 
 .enter-code-stage-button:hover {
-  background-color: var(--button-purple-hover);
+  background: var(--button-purple-hover);
 }
 
 form a {
@@ -261,7 +261,7 @@ form a {
 
 form a button {
   margin-top: 5%;
-  background-color: transparent;
+  background: transparent;
   color: #8F9DBE;
   font-size: .8em;
   transition: .4s;
@@ -682,7 +682,7 @@ form.solution-add-area > div:last-of-type button {
 }
 
 form.solution-add-area > div:last-of-type button:hover {
-  background-color: var(--button-green-hover);
+  background: var(--button-green-hover);
 } */
 
 /* profile */

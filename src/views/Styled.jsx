@@ -79,7 +79,7 @@ export const ProgrammingLangP = styled.p`
     padding: 1%;
     border-radius: 10px;
     width: 100%;
-    background-color: ${props => props.theme.programmingLangBackgroundColor};
+    background: ${props => props.theme.programmingLangBackgroundColor};
     color: ${props => props.theme.programmingLangTextColor};
 `;
 
@@ -105,16 +105,15 @@ export const H3 = styled.h3`
 export const SolutionButtonDiv = styled.div`
     background: ${props => props.theme.buttonBlack};
 `;
-// +
+
 export const SolutionButton = styled.button`
+    ${buttonTemplate}
     padding: .3em;
     margin: .6em 1.6em;
     border: 1px solid ${props => props.theme.iconPrimaryColor};
-    border-radius: 4px;
     background: ${props => props.theme.buttonBlack};
     color: ${props => props.theme.iconPrimaryColor};
-    cursor: pointer;
-    transition: .4s;
+
 
     &:hover {
         background: ${props => props.theme.iconPrimaryColor};

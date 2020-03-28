@@ -8,7 +8,7 @@ export const Div = styled.div`
     height: 100px;
     border-radius: 4px;
     box-shadow: ${props => props.theme.primaryBoxShadow};
-    background-color: ${props => props.theme.primaryLightColor};
+    background: ${props => props.theme.primaryLightColor};
     font-size: 92%;
     cursor: pointer;
     transition: .4s;
@@ -27,7 +27,7 @@ export const Div = styled.div`
       }
 
     &:hover {
-        background-color: ${props => props.theme.focusedBackgroundColor};
+        background: ${props => props.theme.focusedBackgroundColor};
         color: ${props => props.theme.fontInitalColor};
     }
 

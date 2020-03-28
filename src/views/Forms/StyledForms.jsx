@@ -55,26 +55,26 @@ export const AuthButton = styled.button`
 `;
 
 export const RegisterButton = styled(AuthButton)`
-    background-color: ${props => props.theme.buttonOrange};
+    background: ${props => props.theme.buttonOrange};
 
     &:hover {
-        background-color: ${props => props.theme.buttonOrangeHover}
+        background: ${props => props.theme.buttonOrangeHover}
     }
 `;
 
 export const LoginButton = styled(AuthButton)`
-    background-color: ${props => props.theme.buttonGreen};
+    background: ${props => props.theme.buttonGreen};
 
     &:hover {
-        background-color: ${props => props.theme.buttonGreenHover}
+        background: ${props => props.theme.buttonGreenHover}
     }
 `;
 
 export const EnterCodeButton = styled(AuthButton)`
-    background-color: ${props => props.theme.buttonPurple};
+    background: ${props => props.theme.buttonPurple};
 
     &:hover {
-        background-color: ${props => props.theme.buttonPurpleHover}
+        background: ${props => props.theme.buttonPurpleHover}
     }
 `;
 
@@ -84,7 +84,7 @@ export const SignUpToInDiv = styled.div`
 `;
 
 export const SignUpToInButton = styled(AuthButton)`
-    background-color: transparent;
+    background: transparent;
     color: ${props => props.theme.buttonGray};
     font-size: .8em;
 

@@ -11,10 +11,10 @@ export const Div = styled.div`
     color: #FFF;
     border-radius: 2px;
     cursor: pointer;
-    background-color: ${props => props.isDeveloperAccount ? props.theme.buttonBlue : props.theme.buttonOrange };
+    background: ${props => props.isDeveloperAccount ? props.theme.buttonBlue : props.theme.buttonOrange };
 
     &:hover {
-        background-color: ${props => props.isDeveloperAccount ? props.theme.buttonBlueHover : props.theme.buttonOrangeHover };
+        background: ${props => props.isDeveloperAccount ? props.theme.buttonBlueHover : props.theme.buttonOrangeHover };
     }
 `;
 

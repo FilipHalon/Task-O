@@ -7,7 +7,7 @@ export const Header = styled.header`
 `;
 
 export const Ul = styled.ul`
-    background-color: #465DEF;
+    background: #465DEF;
     margin: 0;
     padding: 0;
     display: flex;

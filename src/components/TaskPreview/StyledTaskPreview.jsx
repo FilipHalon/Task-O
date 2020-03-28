@@ -4,7 +4,7 @@ import { buttonTemplate } from "../../views/Styled";
 
 export const Article = styled.article`
     border-radius: 4px;
-    background-color: ${props => props.theme.primaryLightColor};
+    background: ${props => props.theme.primaryLightColor};
     font-size: 90%;
 `;
 
@@ -47,14 +47,14 @@ export const Img = styled.image`
 `;
 
 export const TaskSummarySection = styled.section`
-    background-color: ${props => props.theme.secondaryLightColor};
+    background: ${props => props.theme.secondaryLightColor};
 `;
 
 export const TaskSummaryP = styled.p`
     display: inline-block;
     margin: 1em;
     padding: .5em;
-    background-color: ${props => props.theme.primaryLightColor};
+    background: ${props => props.theme.primaryLightColor};
     border-radius: 4px;
 `;
 
@@ -74,9 +74,9 @@ export const BottomButton = styled.button`
     ${buttonTemplate}
     padding: .5rem;
     color: ${props => props.theme.primaryLightColor};
-    background-color: ${props => props.theme.buttonBlue};
+    background: ${props => props.theme.buttonBlue};
 
     &:hover {
-        background-color: ${props => props.theme.buttonBlueHover};
+        background: ${props => props.theme.buttonBlueHover};
     }
 `;
