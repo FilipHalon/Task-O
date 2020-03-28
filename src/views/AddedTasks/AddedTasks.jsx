@@ -1,7 +1,6 @@
 import React from 'react';
 import AddedTask from '../../components/TaskPreview/AddedTask';
-import { GeneralInfoSection, H2, GeneralInfoH1 } from '../Styled';
-import { TaskListSection } from './StyledAddedTasks';
+import { GeneralInfoSection, H2, GeneralInfoH1, TaskListSection } from '../Styled';
 
 export default props => {
     const { isThisProfileTask } = props; 

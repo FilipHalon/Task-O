@@ -1,29 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { faTasks, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { Div, Span, StyledIcon } from './StyledProfile';
+import { Div, P, StyledIcon } from './StyledProfile';
+import { TaskListSection } from '../Styled';
 
 export default props => {
     const { isDeveloperAccount } = props
 
     return (
-        <div className="task-area">
+        <TaskListSection>
             <Link to="/tasks">
-                <Div><Span><StyledIcon icon={faSearch} /></Span><Span>Przeglądaj zadania</Span></Div>
+                <Div><StyledIcon icon={faSearch} /><P>Przeglądaj zadania</P></Div>
             </Link>
             {!isDeveloperAccount &&
             <Link to="/new-task-add">
-                <Div><Span><StyledIcon icon={faTasks} /></Span><Span>Dodaj zadanie</Span></Div>
+                <Div><StyledIcon icon={faTasks} /><P>Dodaj zadanie</P></Div>
             </Link>
             }
             <Link to="/">
-                <Div><Span><StyledIcon icon={faSearch} /></Span><Span>Zobacz rozwiązania</Span></Div>
+                <Div><StyledIcon icon={faSearch} /><P>Zobacz rozwiązania</P></Div>
             </Link>
             {!isDeveloperAccount && 
             <Link to="/this-profile-tasks">
-                <Div><Span><StyledIcon icon={faSearch} /></Span><Span>Zobacz wstawione zadania</Span></Div>
+                <Div><StyledIcon icon={faSearch} /><P>Zobacz wstawione zadania</P></Div>
             </Link>
             }
-        </div>
+        </TaskListSection>
     )
 };

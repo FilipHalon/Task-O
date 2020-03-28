@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Div = styled.div`
@@ -36,12 +36,18 @@ export const Div = styled.div`
     }
 `;
 
+const paddingTemplate = css`
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+`;
+
 export const StyledIcon = styled(FontAwesomeIcon)`
+    ${paddingTemplate}
     font-size: 140%;
     color: ${props => props.theme.buttonOrange};
 `;
 
-export const Span = styled.span`
-    padding-right: .5rem;
-    padding-bottom: .5rem;
+export const P = styled.p`
+    ${paddingTemplate}
+    margin: 0;
 `;
