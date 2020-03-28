@@ -12,7 +12,7 @@ export const Div = styled.div`
     font-size: 92%;
     cursor: pointer;
     transition: .4s;
-    color: ${props => props.theme.fontBlurredColor};
+    color: ${props => props.theme.textBlurredColor};
 
     @media (min-width: 930px) {
         font-size: 110%;
@@ -28,7 +28,7 @@ export const Div = styled.div`
 
     &:hover {
         background: ${props => props.theme.focusedBackgroundColor};
-        color: ${props => props.theme.fontInitalColor};
+        color: ${props => props.theme.textInitalColor};
     }
 
     &:hover svg {

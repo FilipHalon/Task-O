@@ -50,7 +50,7 @@ export const GeneralInfoH1 = styled.h1`
 
 export const H2 = styled.h2`
     font-size: 100%;
-    color: ${props => props.theme.fontBlurredColor};
+    color: ${props => props.theme.textBlurredColor};
 `;
 
 export const Img = styled.img`

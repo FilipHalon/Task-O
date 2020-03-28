@@ -10,7 +10,7 @@ export const AuthForm = styled(Form)`
     margin-top: 2%;
     width: 90%;
     max-width: 550px;
-    color: ${props => props.theme.fontBlurredColor};
+    color: ${props => props.theme.textBlurredColor};
 `;
 
 export const Ul = styled.ul`

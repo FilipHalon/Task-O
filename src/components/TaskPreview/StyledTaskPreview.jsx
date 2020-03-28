@@ -22,7 +22,7 @@ export const TaskIntroDiv = styled.div`
     transition: .4s;
 
     &:hover {
-        color: ${props => props.theme.fontInitalColor};
+        color: ${props => props.theme.textInitalColor};
     }
 `;
 
@@ -67,7 +67,7 @@ export const TaskBottomSection = styled.section`
 export const BottomP = styled.p`
     margin: 0;
     padding: .5rem;
-    color: ${props => props.theme.fontBlurredColor};
+    color: ${props => props.theme.textBlurredColor};
 `;
 
 export const BottomButton = styled.button`
