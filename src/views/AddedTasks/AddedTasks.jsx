@@ -7,7 +7,6 @@ export default props => {
 
     return (
         <>
-            {!isThisProfileTask &&
             <GeneralInfoSection>
                 <div>
                     <GeneralInfoH1>Zadania</GeneralInfoH1>
@@ -15,7 +14,6 @@ export default props => {
                     {/* <p>Firmy: 100</p> */}
                 </div>
             </GeneralInfoSection>
-            }
             <TaskListSection>
                 <AddedTask isThisProfileTask={isThisProfileTask}/>
                 <AddedTask isThisProfileTask={isThisProfileTask}/>

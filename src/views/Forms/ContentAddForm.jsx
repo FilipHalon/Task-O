@@ -12,7 +12,7 @@ export default props => {
             <Article>
                 <HeadingSection>
                     <StyledIcon icon={faLightbulb} />
-                    <H3>Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</H3>
+                    <H3 as="h1">Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</H3>
                 </HeadingSection>
                 <Form>
                     <InputSection>
