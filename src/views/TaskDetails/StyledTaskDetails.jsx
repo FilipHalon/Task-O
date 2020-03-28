@@ -9,19 +9,19 @@ export const ProgrammingLangDiv = styled.div`
     border-bottom: ${props => props.theme.taskSidebarBorder};
 `;
 
-export const TaskDescDiv = styled.div`
+export const TaskDescSection = styled.section`
     padding: 15px;
     background: ${props => props.isSummary && props.theme.secondaryLightColor};
 `;
 
-export const ActionDiv = styled.div`
+export const ActionSection = styled.section`
     display: flex;
     height: 3.5em;
-    padding: 2em;
+    padding: 1em;
     border-radius: 4px;
 `;
 
-export const ActionSubDiv = styled.div`
+export const ActionDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@ export const ActionSubDiv = styled.div`
     border-radius: 4px;
 `;
 
-export const LeftActionDiv = styled(ActionSubDiv)`
+export const LeftActionDiv = styled(ActionDiv)`
     background: ${props => props.theme.buttonBlue};
     color: ${props => props.theme.primaryLightColor};
     font-size: 90%;
