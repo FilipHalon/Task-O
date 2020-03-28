@@ -6,5 +6,4 @@ export const Footer = styled.footer`
     color: ${props => props.theme.navbarBackgroundColor};
     text-align: center;
     font-size: 90%;
-    font-weight: bold;
 `;
