@@ -1,23 +1,23 @@
 import React from 'react';
 import { faLightbulb, faCloudUploadAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { GeneralInfoDiv, H2, Img, ContentWrapperDiv, HeadingDiv, StyledIcon, H3, ProgrammingLangP, TaskDetailsStyledUploadIcon } from '../Styled';
+import { GeneralInfoSection, H2, Img, ContentWrapperDiv, HeadingSection, StyledIcon, H3, ProgrammingLangP, TaskDetailsStyledUploadIcon, GeneralInfoH1 } from '../Styled';
 import { ProgrammingLangDiv, TaskDescDiv, ActionDiv, ActionSubDiv, LeftActionDiv } from './StyledTaskDetails';
 
 export default () => {
     return (
         <>
-            <GeneralInfoDiv>
+            <GeneralInfoSection>
                 <div>
-                    <H2 isPrimary>Implementacja algorytmu sortowania</H2>
+                    <GeneralInfoH1>Implementacja algorytmu sortowania</GeneralInfoH1>
                     <H2>Uniwersytet im. Adama Mickiewicza</H2>
                 </div>
                 <div>
                     <Img src="" alt="" />
                 </div>
-            </GeneralInfoDiv>
+            </GeneralInfoSection>
             <ContentWrapperDiv>
-                <HeadingDiv>
+                <HeadingSection>
                     <StyledIcon icon={faLightbulb} />
                     <H3>Opis zadania</H3>
                     {/* <div>
@@ -28,7 +28,7 @@ export default () => {
                         <span><FontAwesomeIcon icon={faThumbsUp} /></span>
                         <span>1000</span>
                     </div> */}
-                </HeadingDiv>
+                </HeadingSection>
                 <ProgrammingLangDiv>
                     {/* <div>
                         <span>Limit pamięci</span>

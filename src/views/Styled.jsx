@@ -38,15 +38,19 @@ export const ContentDiv = styled.div`
     line-height: 1.2em;
 `;
 
-export const GeneralInfoDiv = styled.div`
+export const GeneralInfoSection = styled.section`
     display: flex;
     justify-content: space-between;
     max-width: 900px;
 `;
 
+export const GeneralInfoH1 = styled.h1`
+    font-size: 120%;
+`;
+
 export const H2 = styled.h2`
-    font-size: ${props => props.isPrimary ? "120%" : "100%"};
-    color: ${props => !props.isPrimary && props.theme.fontBlurredColor};
+    font-size: 100%;
+    color: ${props => props.theme.fontBlurredColor};
 `;
 
 export const Img = styled.img`
@@ -58,7 +62,7 @@ export const ContentWrapperDiv = styled.div`
     border-radius: 4px;
 `;
 
-export const HeadingDiv = styled.div`
+export const HeadingSection = styled.section`
     display: flex;
     align-items: center;
     border-bottom: ${props => props.theme.taskSidebarBorder};

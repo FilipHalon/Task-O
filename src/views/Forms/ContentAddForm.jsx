@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
-import { ContentWrapperDiv, HeadingDiv, StyledIcon, H3 } from '../Styled';
-import { Form, InputDiv, Textarea, ContentAddInput, BottomDiv, ContentAddButton } from './StyledForms';
+import { ContentWrapperDiv, HeadingSection, StyledIcon, H3 } from '../Styled';
+import { Form, InputSection, Textarea, ContentAddInput, BottomSection, ContentAddButton } from './StyledForms';
 
 export default props => {
     const { isNewSolution } = props;
@@ -10,26 +10,25 @@ export default props => {
     return(
         <>
             <ContentWrapperDiv>
-                <HeadingDiv>
+                <HeadingSection>
                     <StyledIcon icon={faLightbulb} />
                     <H3>Dodawanie {isNewSolution ? "rozwiązania" : "zadania"}</H3>
-                </HeadingDiv>
+                </HeadingSection>
                 <Form>
-                    <InputDiv>
+                    <InputSection>
                     {isNewSolution ?
                         <ContentAddInput type="file"/>
                     :
                     <>
-                    {/* + */}
-                        <Textarea type="text" rows="4" cols="90" placeholder="Podaj streszczenie zadania"/>
-                        <ContentAddInput type="text" placeholder="Wybierz język programowania"/>
-                        <Textarea type="text" rows="8" cols="90" placeholder="Podaj szczegóły zadania"/>
+                        <Textarea type="text" name="summary" rows="4" cols="90" placeholder="Podaj streszczenie zadania"/>
+                        <ContentAddInput type="text" name="programming-lang" placeholder="Wybierz język programowania"/>
+                        <Textarea type="text" name="details" rows="8" cols="90" placeholder="Podaj szczegóły zadania"/>
                     </>
                     }
-                    <BottomDiv>
+                    <BottomSection>
                         <ContentAddButton type="submit"><FontAwesomeIcon icon={faCloudUploadAlt} /> Publikuj</ContentAddButton>
-                    </BottomDiv>
-                    </InputDiv>
+                    </BottomSection>
+                    </InputSection>
                 </Form>
             </ContentWrapperDiv>
         </>

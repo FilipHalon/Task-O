@@ -15,29 +15,29 @@ export default props => {
             {isRegisterForm && 
             <Li>
                 {isDeveloperIcon}
-                <AuthInput type="text" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
+                <AuthInput type="text" name="name" placeholder={isDeveloperAccount ? "Podaj imię" : "Podaj nazwę firmy"} />
             </Li>
             }
             {
             isRegisterForm &&
             <Li>
                 {isDeveloperIcon}
-                <AuthInput type="text" placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
+                <AuthInput type="text" name={isDeveloperAccount ? "surname" : "nip"} placeholder={isDeveloperAccount ? "Podaj nazwisko" : "Podaj numer NIP"}/>
             </Li>
             }
             <Li>
                 {isDeveloperIcon}
-                <AuthInput type="email" placeholder="Podaj adres e-mail" />
+                <AuthInput type="email" name="email" placeholder="Podaj adres e-mail" />
             </Li>
             <Li>
                 {lockIcon}
-                <AuthInput type="password" placeholder="Podaj hasło" />
+                <AuthInput type="password" name="password" placeholder="Podaj hasło" />
             </Li>
             {
             isRegisterForm &&
             <Li>
                 {lockIcon}
-                <AuthInput type="password" placeholder="Powtórz hasło" />
+                <AuthInput type="password" name="password-confirm" placeholder="Powtórz hasło" />
             </Li>
             }
         </>
@@ -55,7 +55,7 @@ export default props => {
                     {isEnterCodeStage ?
                         <Li>
                             <Span><FontAwesomeIcon icon={faLock} /></Span>
-                            <AuthInput type="text" placeholder="Wprowadź kod autoryzacyjny" />
+                            <AuthInput type="text" name="code" placeholder="Wprowadź kod autoryzacyjny" />
                         </Li>
                         : 
                         createSignInUpForm()
@@ -77,4 +77,4 @@ export default props => {
             </AuthForm>
         </ContentCenteredSection>
     )
-}
+};
