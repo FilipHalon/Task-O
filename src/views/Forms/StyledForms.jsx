@@ -26,20 +26,20 @@ export const Li = styled.li`
     border-bottom: ${props => props.theme.taskSidebarBorder};
 `;
 
-const FormElementTemplate = css`
+const formElementTemplate = css`
     border: none;
     height: 54px;
     font-size: 110%;
 `;
 
 export const AuthInput = styled.input`
-    ${FormElementTemplate}
+    ${formElementTemplate}
     width: 100%;
     padding-left: 1.75rem;
 `;
 
 export const Span = styled.span`
-    ${FormElementTemplate}
+    ${formElementTemplate}
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ export const Span = styled.span`
 
 export const AuthButton = styled.button`
     ${buttonTemplate}
-    ${FormElementTemplate}
+    ${formElementTemplate}
     margin-top: 5%;
     color: ${props => props.theme.primaryLightColor};
 `;
@@ -100,20 +100,20 @@ export const InputSection = styled.section`
     border: solid 1em transparent;
 `;
 
-const ContentAddFormElementTemplate = css`
-    ${FormElementTemplate}
+const contentAddformElementTemplate = css`
+    ${formElementTemplate}
     padding: 1em;
     margin-bottom: 1em;
     box-shadow: ${props => props.theme.primaryBoxShadow};
 `;
 
 export const ContentAddInput = styled.input`
-    ${ContentAddFormElementTemplate}
+    ${contentAddformElementTemplate}
     width: 90%;
 `;
 
 export const Textarea = styled.textarea`
-    ${ContentAddFormElementTemplate}
+    ${contentAddformElementTemplate}
     height: initial;
     width: 90%;
 `;
