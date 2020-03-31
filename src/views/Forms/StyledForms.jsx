@@ -105,17 +105,16 @@ const contentAddformElementTemplate = css`
     padding: 1em;
     margin-bottom: 1em;
     box-shadow: ${props => props.theme.primaryBoxShadow};
+    width: 90%;
 `;
 
 export const ContentAddInput = styled.input`
     ${contentAddformElementTemplate}
-    width: 90%;
 `;
 
 export const Textarea = styled.textarea`
     ${contentAddformElementTemplate}
     height: initial;
-    width: 90%;
 `;
 
 export const BottomSection = styled.section`
